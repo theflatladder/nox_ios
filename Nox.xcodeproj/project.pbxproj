@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322DD37F2B57CDD300987924 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 322DD37E2B57CDD300987924 /* Localizable.xcstrings */; };
+		322DD3812B57CEDE00987924 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DD3802B57CEDE00987924 /* String.swift */; };
 		3251637E2B5712700091F2C0 /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251637D2B5712700091F2C0 /* HabitView.swift */; };
 		325163802B5712790091F2C0 /* HabitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3251637F2B5712790091F2C0 /* HabitView.xib */; };
 		325163922B5713C70091F2C0 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 325163822B5713C70091F2C0 /* Rubik-MediumItalic.ttf */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		322DD37E2B57CDD300987924 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		322DD3802B57CEDE00987924 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3251637D2B5712700091F2C0 /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
 		3251637F2B5712790091F2C0 /* HabitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitView.xib; sourceTree = "<group>"; };
 		325163822B5713C70091F2C0 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				325163A62B5716CE0091F2C0 /* UIView.swift */,
+				322DD3802B57CEDE00987924 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				3269A7082B567BF500A29728 /* AppDelegate.swift */,
 				3269A70A2B567BF500A29728 /* SceneDelegate.swift */,
 				3269A7112B567BF600A29728 /* Assets.xcassets */,
+				322DD37E2B57CDD300987924 /* Localizable.xcstrings */,
 				3269A7162B567BF600A29728 /* Info.plist */,
 			);
 			path = Nox;
@@ -206,6 +212,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 3269A6FC2B567BF500A29728;
 			productRefGroup = 3269A7062B567BF500A29728 /* Products */;
@@ -227,6 +234,7 @@
 				3269A7152B567BF600A29728 /* LaunchScreen.storyboard in Resources */,
 				325163802B5712790091F2C0 /* HabitView.xib in Resources */,
 				3251639B2B5713C70091F2C0 /* Rubik-Italic.ttf in Resources */,
+				322DD37F2B57CDD300987924 /* Localizable.xcstrings in Resources */,
 				325163A12B5713C70091F2C0 /* Rubik-BoldItalic.ttf in Resources */,
 				325163922B5713C70091F2C0 /* Rubik-MediumItalic.ttf in Resources */,
 				3251639C2B5713C70091F2C0 /* Rubik-LightItalic.ttf in Resources */,
@@ -252,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322DD3812B57CEDE00987924 /* String.swift in Sources */,
 				325163A72B5716CE0091F2C0 /* UIView.swift in Sources */,
 				3269A70D2B567BF500A29728 /* HomeController.swift in Sources */,
 				3251637E2B5712700091F2C0 /* HabitView.swift in Sources */,
@@ -287,6 +296,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -350,6 +360,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

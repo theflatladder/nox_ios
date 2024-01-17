@@ -17,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="64"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iry-8F-N9w">
-                    <rect key="frame" x="16" y="22.666666666666671" width="361" height="19"/>
+                    <rect key="frame" x="176.33333333333334" y="22.666666666666671" width="40.333333333333343" height="19"/>
                     <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -25,10 +25,9 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Iry-8F-N9w" secondAttribute="trailing" constant="16" id="617-jQ-TCg"/>
                 <constraint firstAttribute="height" constant="64" id="9LN-h3-UyL"/>
-                <constraint firstItem="Iry-8F-N9w" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="bHa-qa-v2f"/>
-                <constraint firstItem="Iry-8F-N9w" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lxy-Xz-kTO"/>
+                <constraint firstItem="Iry-8F-N9w" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JJK-5m-vG4"/>
+                <constraint firstItem="Iry-8F-N9w" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eyy-Z1-PC4"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

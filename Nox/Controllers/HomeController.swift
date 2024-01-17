@@ -31,9 +31,16 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: .lz("Add"), style: .plain, target: self, action: #selector(addHabit))
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 24, right: 0)
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = false
+    }
+    
+    @objc func addHabit(){
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
