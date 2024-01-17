@@ -7,69 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		322DD37F2B57CDD300987924 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 322DD37E2B57CDD300987924 /* Localizable.xcstrings */; };
-		322DD3812B57CEDE00987924 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DD3802B57CEDE00987924 /* String.swift */; };
-		3251637E2B5712700091F2C0 /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251637D2B5712700091F2C0 /* HabitView.swift */; };
-		325163802B5712790091F2C0 /* HabitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3251637F2B5712790091F2C0 /* HabitView.xib */; };
-		325163922B5713C70091F2C0 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 325163822B5713C70091F2C0 /* Rubik-MediumItalic.ttf */; };
-		325163932B5713C70091F2C0 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 325163832B5713C70091F2C0 /* Rubik-VariableFont_wght.ttf */; };
-		325163942B5713C70091F2C0 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 325163842B5713C70091F2C0 /* Rubik-Bold.ttf */; };
-		325163952B5713C70091F2C0 /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 325163852B5713C70091F2C0 /* Rubik-SemiBoldItalic.ttf */; };
-		325163962B5713C70091F2C0 /* Rubik-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 325163862B5713C70091F2C0 /* Rubik-Italic-VariableFont_wght.ttf */; };
-		325163972B5713C70091F2C0 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 325163872B5713C70091F2C0 /* Rubik-Light.ttf */; };
-		325163982B5713C70091F2C0 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 325163882B5713C70091F2C0 /* Rubik-Medium.ttf */; };
-		325163992B5713C70091F2C0 /* Rubik-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 325163892B5713C70091F2C0 /* Rubik-ExtraBoldItalic.ttf */; };
-		3251639A2B5713C70091F2C0 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3251638A2B5713C70091F2C0 /* Rubik-Black.ttf */; };
-		3251639B2B5713C70091F2C0 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3251638B2B5713C70091F2C0 /* Rubik-Italic.ttf */; };
-		3251639C2B5713C70091F2C0 /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3251638C2B5713C70091F2C0 /* Rubik-LightItalic.ttf */; };
-		3251639D2B5713C70091F2C0 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3251638D2B5713C70091F2C0 /* Rubik-SemiBold.ttf */; };
-		3251639E2B5713C70091F2C0 /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3251638E2B5713C70091F2C0 /* Rubik-BlackItalic.ttf */; };
-		3251639F2B5713C70091F2C0 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3251638F2B5713C70091F2C0 /* Rubik-ExtraBold.ttf */; };
-		325163A02B5713C70091F2C0 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 325163902B5713C70091F2C0 /* Rubik-Regular.ttf */; };
-		325163A12B5713C70091F2C0 /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 325163912B5713C70091F2C0 /* Rubik-BoldItalic.ttf */; };
-		325163A72B5716CE0091F2C0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325163A62B5716CE0091F2C0 /* UIView.swift */; };
-		3269A7092B567BF500A29728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269A7082B567BF500A29728 /* AppDelegate.swift */; };
-		3269A70B2B567BF500A29728 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269A70A2B567BF500A29728 /* SceneDelegate.swift */; };
-		3269A70D2B567BF500A29728 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269A70C2B567BF500A29728 /* HomeController.swift */; };
-		3269A7102B567BF500A29728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3269A70E2B567BF500A29728 /* Main.storyboard */; };
-		3269A7122B567BF600A29728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3269A7112B567BF600A29728 /* Assets.xcassets */; };
-		3269A7152B567BF600A29728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3269A7132B567BF600A29728 /* LaunchScreen.storyboard */; };
+		328DBB942B57F291007B9070 /* NoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB932B57F291007B9070 /* NoxApp.swift */; };
+		328DBB962B57F291007B9070 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB952B57F291007B9070 /* ContentView.swift */; };
+		328DBB982B57F291007B9070 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB972B57F291007B9070 /* Item.swift */; };
+		328DBB9A2B57F292007B9070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328DBB992B57F292007B9070 /* Assets.xcassets */; };
+		328DBB9D2B57F292007B9070 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328DBB9C2B57F292007B9070 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		322DD37E2B57CDD300987924 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		322DD3802B57CEDE00987924 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		3251637D2B5712700091F2C0 /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
-		3251637F2B5712790091F2C0 /* HabitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitView.xib; sourceTree = "<group>"; };
-		325163822B5713C70091F2C0 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
-		325163832B5713C70091F2C0 /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		325163842B5713C70091F2C0 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
-		325163852B5713C70091F2C0 /* Rubik-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		325163862B5713C70091F2C0 /* Rubik-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		325163872B5713C70091F2C0 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
-		325163882B5713C70091F2C0 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
-		325163892B5713C70091F2C0 /* Rubik-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		3251638A2B5713C70091F2C0 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
-		3251638B2B5713C70091F2C0 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
-		3251638C2B5713C70091F2C0 /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
-		3251638D2B5713C70091F2C0 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
-		3251638E2B5713C70091F2C0 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
-		3251638F2B5713C70091F2C0 /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
-		325163902B5713C70091F2C0 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
-		325163912B5713C70091F2C0 /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
-		325163A62B5716CE0091F2C0 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		3269A7052B567BF500A29728 /* Nox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nox.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3269A7082B567BF500A29728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3269A70A2B567BF500A29728 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3269A70C2B567BF500A29728 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		3269A70F2B567BF500A29728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3269A7112B567BF600A29728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3269A7142B567BF600A29728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3269A7162B567BF600A29728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		328DBB902B57F291007B9070 /* Nox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		328DBB932B57F291007B9070 /* NoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoxApp.swift; sourceTree = "<group>"; };
+		328DBB952B57F291007B9070 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		328DBB972B57F291007B9070 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		328DBB992B57F292007B9070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		328DBB9C2B57F292007B9070 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3269A7022B567BF500A29728 /* Frameworks */ = {
+		328DBB8D2B57F291007B9070 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,107 +34,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		325163812B5713C70091F2C0 /* Fonts */ = {
+		328DBB872B57F291007B9070 = {
 			isa = PBXGroup;
 			children = (
-				325163822B5713C70091F2C0 /* Rubik-MediumItalic.ttf */,
-				325163832B5713C70091F2C0 /* Rubik-VariableFont_wght.ttf */,
-				325163842B5713C70091F2C0 /* Rubik-Bold.ttf */,
-				325163852B5713C70091F2C0 /* Rubik-SemiBoldItalic.ttf */,
-				325163862B5713C70091F2C0 /* Rubik-Italic-VariableFont_wght.ttf */,
-				325163872B5713C70091F2C0 /* Rubik-Light.ttf */,
-				325163882B5713C70091F2C0 /* Rubik-Medium.ttf */,
-				325163892B5713C70091F2C0 /* Rubik-ExtraBoldItalic.ttf */,
-				3251638A2B5713C70091F2C0 /* Rubik-Black.ttf */,
-				3251638B2B5713C70091F2C0 /* Rubik-Italic.ttf */,
-				3251638C2B5713C70091F2C0 /* Rubik-LightItalic.ttf */,
-				3251638D2B5713C70091F2C0 /* Rubik-SemiBold.ttf */,
-				3251638E2B5713C70091F2C0 /* Rubik-BlackItalic.ttf */,
-				3251638F2B5713C70091F2C0 /* Rubik-ExtraBold.ttf */,
-				325163902B5713C70091F2C0 /* Rubik-Regular.ttf */,
-				325163912B5713C70091F2C0 /* Rubik-BoldItalic.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		325163A22B5713D20091F2C0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3251637D2B5712700091F2C0 /* HabitView.swift */,
-				3251637F2B5712790091F2C0 /* HabitView.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		325163A32B5713DE0091F2C0 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				3269A70C2B567BF500A29728 /* HomeController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		325163A42B5713E30091F2C0 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				3269A70E2B567BF500A29728 /* Main.storyboard */,
-				3269A7132B567BF600A29728 /* LaunchScreen.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		325163A52B5716BF0091F2C0 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				325163A62B5716CE0091F2C0 /* UIView.swift */,
-				322DD3802B57CEDE00987924 /* String.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		3269A6FC2B567BF500A29728 = {
-			isa = PBXGroup;
-			children = (
-				3269A7072B567BF500A29728 /* Nox */,
-				3269A7062B567BF500A29728 /* Products */,
+				328DBB922B57F291007B9070 /* Nox */,
+				328DBB912B57F291007B9070 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3269A7062B567BF500A29728 /* Products */ = {
+		328DBB912B57F291007B9070 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3269A7052B567BF500A29728 /* Nox.app */,
+				328DBB902B57F291007B9070 /* Nox.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3269A7072B567BF500A29728 /* Nox */ = {
+		328DBB922B57F291007B9070 /* Nox */ = {
 			isa = PBXGroup;
 			children = (
-				325163812B5713C70091F2C0 /* Fonts */,
-				325163A42B5713E30091F2C0 /* Storyboards */,
-				325163A32B5713DE0091F2C0 /* Controllers */,
-				325163A22B5713D20091F2C0 /* Views */,
-				325163A52B5716BF0091F2C0 /* Extensions */,
-				3269A7082B567BF500A29728 /* AppDelegate.swift */,
-				3269A70A2B567BF500A29728 /* SceneDelegate.swift */,
-				3269A7112B567BF600A29728 /* Assets.xcassets */,
-				322DD37E2B57CDD300987924 /* Localizable.xcstrings */,
-				3269A7162B567BF600A29728 /* Info.plist */,
+				328DBB932B57F291007B9070 /* NoxApp.swift */,
+				328DBB952B57F291007B9070 /* ContentView.swift */,
+				328DBB972B57F291007B9070 /* Item.swift */,
+				328DBB992B57F292007B9070 /* Assets.xcassets */,
+				328DBB9B2B57F292007B9070 /* Preview Content */,
 			);
 			path = Nox;
+			sourceTree = "<group>";
+		};
+		328DBB9B2B57F292007B9070 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				328DBB9C2B57F292007B9070 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3269A7042B567BF500A29728 /* Nox */ = {
+		328DBB8F2B57F291007B9070 /* Nox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3269A7192B567BF600A29728 /* Build configuration list for PBXNativeTarget "Nox" */;
+			buildConfigurationList = 328DBBA02B57F292007B9070 /* Build configuration list for PBXNativeTarget "Nox" */;
 			buildPhases = (
-				3269A7012B567BF500A29728 /* Sources */,
-				3269A7022B567BF500A29728 /* Frameworks */,
-				3269A7032B567BF500A29728 /* Resources */,
+				328DBB8C2B57F291007B9070 /* Sources */,
+				328DBB8D2B57F291007B9070 /* Frameworks */,
+				328DBB8E2B57F291007B9070 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -187,116 +87,73 @@
 			);
 			name = Nox;
 			productName = Nox;
-			productReference = 3269A7052B567BF500A29728 /* Nox.app */;
+			productReference = 328DBB902B57F291007B9070 /* Nox.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3269A6FD2B567BF500A29728 /* Project object */ = {
+		328DBB882B57F291007B9070 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					3269A7042B567BF500A29728 = {
+					328DBB8F2B57F291007B9070 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = 3269A7002B567BF500A29728 /* Build configuration list for PBXProject "Nox" */;
+			buildConfigurationList = 328DBB8B2B57F291007B9070 /* Build configuration list for PBXProject "Nox" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
-				ru,
 			);
-			mainGroup = 3269A6FC2B567BF500A29728;
-			productRefGroup = 3269A7062B567BF500A29728 /* Products */;
+			mainGroup = 328DBB872B57F291007B9070;
+			productRefGroup = 328DBB912B57F291007B9070 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3269A7042B567BF500A29728 /* Nox */,
+				328DBB8F2B57F291007B9070 /* Nox */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3269A7032B567BF500A29728 /* Resources */ = {
+		328DBB8E2B57F291007B9070 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				325163962B5713C70091F2C0 /* Rubik-Italic-VariableFont_wght.ttf in Resources */,
-				3251639A2B5713C70091F2C0 /* Rubik-Black.ttf in Resources */,
-				3269A7152B567BF600A29728 /* LaunchScreen.storyboard in Resources */,
-				325163802B5712790091F2C0 /* HabitView.xib in Resources */,
-				3251639B2B5713C70091F2C0 /* Rubik-Italic.ttf in Resources */,
-				322DD37F2B57CDD300987924 /* Localizable.xcstrings in Resources */,
-				325163A12B5713C70091F2C0 /* Rubik-BoldItalic.ttf in Resources */,
-				325163922B5713C70091F2C0 /* Rubik-MediumItalic.ttf in Resources */,
-				3251639C2B5713C70091F2C0 /* Rubik-LightItalic.ttf in Resources */,
-				3251639D2B5713C70091F2C0 /* Rubik-SemiBold.ttf in Resources */,
-				325163952B5713C70091F2C0 /* Rubik-SemiBoldItalic.ttf in Resources */,
-				325163932B5713C70091F2C0 /* Rubik-VariableFont_wght.ttf in Resources */,
-				3251639F2B5713C70091F2C0 /* Rubik-ExtraBold.ttf in Resources */,
-				325163992B5713C70091F2C0 /* Rubik-ExtraBoldItalic.ttf in Resources */,
-				3251639E2B5713C70091F2C0 /* Rubik-BlackItalic.ttf in Resources */,
-				325163942B5713C70091F2C0 /* Rubik-Bold.ttf in Resources */,
-				325163972B5713C70091F2C0 /* Rubik-Light.ttf in Resources */,
-				325163A02B5713C70091F2C0 /* Rubik-Regular.ttf in Resources */,
-				3269A7122B567BF600A29728 /* Assets.xcassets in Resources */,
-				325163982B5713C70091F2C0 /* Rubik-Medium.ttf in Resources */,
-				3269A7102B567BF500A29728 /* Main.storyboard in Resources */,
+				328DBB9D2B57F292007B9070 /* Preview Assets.xcassets in Resources */,
+				328DBB9A2B57F292007B9070 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3269A7012B567BF500A29728 /* Sources */ = {
+		328DBB8C2B57F291007B9070 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				322DD3812B57CEDE00987924 /* String.swift in Sources */,
-				325163A72B5716CE0091F2C0 /* UIView.swift in Sources */,
-				3269A70D2B567BF500A29728 /* HomeController.swift in Sources */,
-				3251637E2B5712700091F2C0 /* HabitView.swift in Sources */,
-				3269A7092B567BF500A29728 /* AppDelegate.swift in Sources */,
-				3269A70B2B567BF500A29728 /* SceneDelegate.swift in Sources */,
+				328DBB962B57F291007B9070 /* ContentView.swift in Sources */,
+				328DBB982B57F291007B9070 /* Item.swift in Sources */,
+				328DBB942B57F291007B9070 /* NoxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		3269A70E2B567BF500A29728 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3269A70F2B567BF500A29728 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3269A7132B567BF600A29728 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3269A7142B567BF600A29728 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		3269A7172B567BF600A29728 /* Debug */ = {
+		328DBB9E2B57F292007B9070 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -355,12 +212,11 @@
 			};
 			name = Debug;
 		};
-		3269A7182B567BF600A29728 /* Release */ = {
+		328DBB9F2B57F292007B9070 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -412,19 +268,20 @@
 			};
 			name = Release;
 		};
-		3269A71A2B567BF600A29728 /* Debug */ = {
+		328DBBA12B57F292007B9070 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nox/Preview Content\"";
 				DEVELOPMENT_TEAM = S3WJ45JT93;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Nox/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,19 +297,20 @@
 			};
 			name = Debug;
 		};
-		3269A71B2B567BF600A29728 /* Release */ = {
+		328DBBA22B57F292007B9070 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nox/Preview Content\"";
 				DEVELOPMENT_TEAM = S3WJ45JT93;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Nox/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,25 +329,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3269A7002B567BF500A29728 /* Build configuration list for PBXProject "Nox" */ = {
+		328DBB8B2B57F291007B9070 /* Build configuration list for PBXProject "Nox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3269A7172B567BF600A29728 /* Debug */,
-				3269A7182B567BF600A29728 /* Release */,
+				328DBB9E2B57F292007B9070 /* Debug */,
+				328DBB9F2B57F292007B9070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3269A7192B567BF600A29728 /* Build configuration list for PBXNativeTarget "Nox" */ = {
+		328DBBA02B57F292007B9070 /* Build configuration list for PBXNativeTarget "Nox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3269A71A2B567BF600A29728 /* Debug */,
-				3269A71B2B567BF600A29728 /* Release */,
+				328DBBA12B57F292007B9070 /* Debug */,
+				328DBBA22B57F292007B9070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3269A6FD2B567BF500A29728 /* Project object */;
+	rootObject = 328DBB882B57F291007B9070 /* Project object */;
 }
