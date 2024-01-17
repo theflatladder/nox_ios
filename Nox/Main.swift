@@ -31,7 +31,7 @@ struct Main: View {
                     Image(systemName: "plus")
                         .frame(width: 48, height: 48)
                         .foregroundColor(Color.white)
-                        .background(Color.blue)
+                        .background(Color.accentColor)
                         .clipShape(Circle())
                         .padding(16)
                 }
@@ -42,7 +42,7 @@ struct Main: View {
     
     private func addHabit() {
         withAnimation {
-            context.insert(Habit(title: "Test"))
+            context.insert(Habit(title: "Test", maxCount: 10, currentCount: 3))
         }
     }
     

@@ -9,16 +9,21 @@ import SwiftUI
 
 struct HabitView: View {
     
-    var habit: Habit
+    @State var habit: Habit
     
     var body: some View {
         HStack{
-            Image(systemName: "globe")
+            ProgressRing(habit: habit, size: 32)
             Text(habit.title)
+                .font(Font.custom("Rubik-Regular", size: 18))
         }
     }
 }
 
 #Preview {
-    HabitView(habit: Habit(title: "Test"))
+    HabitView(habit: .testHabit)
+}
+
+extension Font{
+    
 }

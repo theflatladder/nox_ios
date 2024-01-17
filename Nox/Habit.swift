@@ -13,10 +13,17 @@ class Habit: Identifiable {
     
     var id: String
     var title: String
+    var maxCount: Int
+    var currentCount: Int
     
-    init(title: String) {
+    init(title: String, maxCount: Int, currentCount: Int) {
         self.id = UUID().uuidString
         self.title = title
+        self.maxCount = maxCount
+        self.currentCount = currentCount
     }
     
+    static var testHabit: Habit{
+        Habit(title: "Test", maxCount: 10, currentCount: 3)
+    }
 }
