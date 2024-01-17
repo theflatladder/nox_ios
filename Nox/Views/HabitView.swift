@@ -15,15 +15,16 @@ struct HabitView: View {
         HStack{
             ProgressRing(habit: habit, size: 32)
             Text(habit.title)
-                .font(Font.custom("Rubik-Regular", size: 18))
+                .font(.RubikRegular(24))
+                .padding(8)
+            Spacer()
         }
+        .padding(16)
+        .background(.background)
+        .cornerRadius(16)
     }
 }
 
 #Preview {
     HabitView(habit: .testHabit)
-}
-
-extension Font{
-    
 }

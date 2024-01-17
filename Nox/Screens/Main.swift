@@ -17,16 +17,28 @@ struct Main: View {
     var body: some View {
         NavigationView{
             ZStack(alignment: .bottomTrailing) {
+                
+                //list of habits
                 List {
                     ForEach(habits) { habit in
-                        NavigationLink {
-                            Text(habit.title)
-                        } label: {
-                            HabitView(habit: habit)
-                        }
+                        HabitView(habit: habit)
+                            .overlay(
+                                NavigationLink(
+                                    destination: { Text(habit.title) },
+                                    label: { EmptyView() }
+                                ).opacity(0)
+                            )
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
+                            .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
                     }
                     .onDelete(perform: deleteHabit)
                 }
+                .listStyle(.plain)
+                .scrollContentBackground(.hidden)
+                .background(Color.systemGray6)
+                
+                //add button
                 Button(action: addHabit){
                     Image(systemName: "plus")
                         .frame(width: 48, height: 48)
@@ -42,7 +54,7 @@ struct Main: View {
     
     private func addHabit() {
         withAnimation {
-            context.insert(Habit(title: "Test", maxCount: 10, currentCount: 3))
+            context.insert(Habit(title: "Test", maxCount: 10, currentCount: .random(in: 1..<10)))
         }
     }
     

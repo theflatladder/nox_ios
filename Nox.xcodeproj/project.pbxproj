@@ -30,7 +30,8 @@
 		32F9E9D82B58613D00B222EF /* Rubik-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9C82B58613D00B222EF /* Rubik-Italic-VariableFont_wght.ttf */; };
 		32F9E9D92B58613D00B222EF /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9C92B58613D00B222EF /* Rubik-Italic.ttf */; };
 		32F9E9DA2B58613D00B222EF /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9CA2B58613D00B222EF /* Rubik-ExtraBold.ttf */; };
-		32F9E9DC2B5862A700B222EF /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9DB2B5862A700B222EF /* View.xib */; };
+		32F9E9E22B586ECE00B222EF /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9E9E12B586ECE00B222EF /* Font.swift */; };
+		32F9E9E52B587B0300B222EF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9E9E42B587B0300B222EF /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +59,9 @@
 		32F9E9C82B58613D00B222EF /* Rubik-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		32F9E9C92B58613D00B222EF /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
 		32F9E9CA2B58613D00B222EF /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
-		32F9E9DB2B5862A700B222EF /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		32F9E9DD2B586DE300B222EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		32F9E9E12B586ECE00B222EF /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		32F9E9E42B587B0300B222EF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,14 +95,14 @@
 		328DBB922B57F291007B9070 /* Nox */ = {
 			isa = PBXGroup;
 			children = (
-				328DBB932B57F291007B9070 /* NoxApp.swift */,
-				328DBB972B57F291007B9070 /* Habit.swift */,
-				328DBB952B57F291007B9070 /* Main.swift */,
-				32F9E9B62B57FE8100B222EF /* HabitView.swift */,
-				32F9E9B82B585CF900B222EF /* ProgressRing.swift */,
+				32F9E9E32B586EEB00B222EF /* Models */,
+				32F9E9DE2B586EB700B222EF /* Screens */,
+				32F9E9DF2B586EBF00B222EF /* Views */,
+				32F9E9E02B586EC500B222EF /* Extensions */,
+				32F9E9DD2B586DE300B222EF /* Info.plist */,
 				328DBB992B57F292007B9070 /* Assets.xcassets */,
+				328DBB932B57F291007B9070 /* NoxApp.swift */,
 				328DBB9B2B57F292007B9070 /* Preview Content */,
-				32F9E9DB2B5862A700B222EF /* View.xib */,
 			);
 			path = Nox;
 			sourceTree = "<group>";
@@ -133,6 +136,40 @@
 				32F9E9C72B58613D00B222EF /* Rubik-VariableFont_wght.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		32F9E9DE2B586EB700B222EF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				328DBB952B57F291007B9070 /* Main.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		32F9E9DF2B586EBF00B222EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32F9E9B62B57FE8100B222EF /* HabitView.swift */,
+				32F9E9B82B585CF900B222EF /* ProgressRing.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32F9E9E02B586EC500B222EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				32F9E9E12B586ECE00B222EF /* Font.swift */,
+				32F9E9E42B587B0300B222EF /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		32F9E9E32B586EEB00B222EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				328DBB972B57F291007B9070 /* Habit.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +242,6 @@
 				328DBB9D2B57F292007B9070 /* Preview Assets.xcassets in Resources */,
 				32F9E9DA2B58613D00B222EF /* Rubik-ExtraBold.ttf in Resources */,
 				32F9E9D72B58613D00B222EF /* Rubik-VariableFont_wght.ttf in Resources */,
-				32F9E9DC2B5862A700B222EF /* View.xib in Resources */,
 				328DBB9A2B57F292007B9070 /* Assets.xcassets in Resources */,
 				32F9E9D22B58613D00B222EF /* Rubik-Light.ttf in Resources */,
 				32F9E9CF2B58613D00B222EF /* Rubik-ExtraBoldItalic.ttf in Resources */,
@@ -224,6 +260,8 @@
 			files = (
 				328DBB962B57F291007B9070 /* Main.swift in Sources */,
 				32F9E9B72B57FE8100B222EF /* HabitView.swift in Sources */,
+				32F9E9E52B587B0300B222EF /* Color.swift in Sources */,
+				32F9E9E22B586ECE00B222EF /* Font.swift in Sources */,
 				328DBB982B57F291007B9070 /* Habit.swift in Sources */,
 				328DBB942B57F291007B9070 /* NoxApp.swift in Sources */,
 				32F9E9B92B585CF900B222EF /* ProgressRing.swift in Sources */,
@@ -363,6 +401,7 @@
 				DEVELOPMENT_TEAM = S3WJ45JT93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -392,6 +431,7 @@
 				DEVELOPMENT_TEAM = S3WJ45JT93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

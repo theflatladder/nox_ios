@@ -24,6 +24,6 @@ class Habit: Identifiable {
     }
     
     static var testHabit: Habit{
-        Habit(title: "Test", maxCount: 10, currentCount: 3)
+        Habit(title: "Test", maxCount: 10, currentCount: .random(in: 1..<10))
     }
 }
