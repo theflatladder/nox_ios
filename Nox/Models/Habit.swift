@@ -30,20 +30,25 @@ class Habit: Identifiable {
     }
 }
 
-enum Period: Codable{
+enum Period: Int, Codable, CaseIterable, Identifiable{
     
-    case Dayly, Weekly, Monthly, Yearly
+    var id: Self { self }
+    
+    case Dayly = 0
+    case Weekly = 1
+    case Monthly = 2
+    case Yearly = 3
     
     var title: String{
         switch self {
         case .Dayly:
-            return "D"
+            return "Day"
         case .Weekly:
-            return "W"
+            return "Week"
         case .Monthly:
-            return "M"
+            return "Month"
         case .Yearly:
-            return "Y"
+            return "Year"
         }
     }
     

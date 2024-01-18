@@ -9,7 +9,8 @@ import SwiftUI
 
 struct AddHabit: View {
     
-    @State var newHabit = Habit()
+    @State private var newHabit = Habit()
+    var save: (Habit)->()
     
     var body: some View {
         VStack(spacing: 24){
@@ -18,6 +19,12 @@ struct AddHabit: View {
                 .padding(.top, 16)
             MyTextField(title: "Title", value: $newHabit.title)
             MyStepper(title: "Max count", value: $newHabit.maxCount)
+            PeriodPicker(period: $newHabit.period)
+            Button("Save", action: {
+                save(newHabit)
+            })
+            .buttonStyle(.bordered)
+            .padding(16)
             Spacer()
         }
         .background(.background)
@@ -31,5 +38,5 @@ struct AddHabit: View {
 }
 
 #Preview {
-    AddHabit()
+    AddHabit(save: {_ in })
 }

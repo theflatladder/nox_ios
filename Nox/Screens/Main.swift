@@ -48,18 +48,17 @@ struct Main: View {
                         .clipShape(Circle())
                         .padding(16)
                 }.sheet(isPresented: $addHabitSheet) {
-                    AddHabit()
-                        .presentationDetents([.medium])
-                        .presentationDragIndicator(.visible)
+                    AddHabit(save: { newHabit in
+                        withAnimation {
+                            context.insert(newHabit)
+                        }
+                        addHabitSheet.toggle()
+                    })
+                    .presentationDetents([.height(500)])
+                    .presentationDragIndicator(.visible)
                 }
             }
             .navigationTitle("Nox")
-        }
-    }
-    
-    private func addHabit() {
-        withAnimation {
-            context.insert(Habit(title: "Test", period: .Weekly, maxCount: 10, currentCount: .random(in: 1..<10)))
         }
     }
     
