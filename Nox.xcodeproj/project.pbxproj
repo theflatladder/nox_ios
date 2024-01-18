@@ -32,6 +32,9 @@
 		32F9E9DA2B58613D00B222EF /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9CA2B58613D00B222EF /* Rubik-ExtraBold.ttf */; };
 		32F9E9E22B586ECE00B222EF /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9E9E12B586ECE00B222EF /* Font.swift */; };
 		32F9E9E52B587B0300B222EF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9E9E42B587B0300B222EF /* Color.swift */; };
+		32FFCD952B594F82006B9A35 /* AddHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FFCD942B594F82006B9A35 /* AddHabit.swift */; };
+		32FFCD972B5951F3006B9A35 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FFCD962B5951F3006B9A35 /* MyTextField.swift */; };
+		32FFCD992B5954C6006B9A35 /* MyStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FFCD982B5954C6006B9A35 /* MyStepper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		32F9E9DD2B586DE300B222EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		32F9E9E12B586ECE00B222EF /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		32F9E9E42B587B0300B222EF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		32FFCD942B594F82006B9A35 /* AddHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabit.swift; sourceTree = "<group>"; };
+		32FFCD962B5951F3006B9A35 /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
+		32FFCD982B5954C6006B9A35 /* MyStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStepper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				328DBB952B57F291007B9070 /* Main.swift */,
+				32FFCD942B594F82006B9A35 /* AddHabit.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -151,6 +158,8 @@
 			children = (
 				32F9E9B62B57FE8100B222EF /* HabitView.swift */,
 				32F9E9B82B585CF900B222EF /* ProgressRing.swift */,
+				32FFCD962B5951F3006B9A35 /* MyTextField.swift */,
+				32FFCD982B5954C6006B9A35 /* MyStepper.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -260,9 +269,12 @@
 			files = (
 				328DBB962B57F291007B9070 /* Main.swift in Sources */,
 				32F9E9B72B57FE8100B222EF /* HabitView.swift in Sources */,
+				32FFCD952B594F82006B9A35 /* AddHabit.swift in Sources */,
+				32FFCD992B5954C6006B9A35 /* MyStepper.swift in Sources */,
 				32F9E9E52B587B0300B222EF /* Color.swift in Sources */,
 				32F9E9E22B586ECE00B222EF /* Font.swift in Sources */,
 				328DBB982B57F291007B9070 /* Habit.swift in Sources */,
+				32FFCD972B5951F3006B9A35 /* MyTextField.swift in Sources */,
 				328DBB942B57F291007B9070 /* NoxApp.swift in Sources */,
 				32F9E9B92B585CF900B222EF /* ProgressRing.swift in Sources */,
 			);

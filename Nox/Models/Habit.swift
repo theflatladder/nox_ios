@@ -17,7 +17,7 @@ class Habit: Identifiable {
     var maxCount: Int
     var currentCount: Int
     
-    init(title: String, period: Period, maxCount: Int, currentCount: Int) {
+    init(title: String = "", period: Period = .Weekly, maxCount: Int = 10, currentCount: Int = 10) {
         self.id = UUID().uuidString
         self.title = title
         self.period = period

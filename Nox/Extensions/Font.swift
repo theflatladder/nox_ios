@@ -14,4 +14,10 @@ extension Font{
     static func RubikBlack(_ size: CGFloat) -> Font{
         Font.custom("Rubik-Black", size: size)
     }
+    static func RubikBold(_ size: CGFloat) -> Font{
+        Font.custom("Rubik-Bold", size: size)
+    }
+    static func RubikSemiBold(_ size: CGFloat) -> Font{
+        Font.custom("Rubik-SemiBold", size: size)
+    }
 }

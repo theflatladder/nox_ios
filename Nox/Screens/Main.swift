@@ -13,6 +13,7 @@ struct Main: View {
     @Environment(\.modelContext) private var context
     
     @Query private var habits: [Habit]
+    @State private var addHabitSheet = false
     
     var body: some View {
         NavigationView{
@@ -39,13 +40,17 @@ struct Main: View {
                 .background(Color.systemGray6)
                 
                 //add button
-                Button(action: addHabit){
+                Button(action: { addHabitSheet.toggle() }){
                     Image(systemName: "plus")
                         .frame(width: 48, height: 48)
                         .foregroundColor(Color.white)
                         .background(Color.accentColor)
                         .clipShape(Circle())
                         .padding(16)
+                }.sheet(isPresented: $addHabitSheet) {
+                    AddHabit()
+                        .presentationDetents([.medium])
+                        .presentationDragIndicator(.visible)
                 }
             }
             .navigationTitle("Nox")
