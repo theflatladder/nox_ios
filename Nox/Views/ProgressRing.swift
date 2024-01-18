@@ -12,7 +12,7 @@ struct ProgressRing: View {
     @State var habit: Habit
     var size: CGFloat
     var lineWidth: CGFloat {
-        size * 0.12
+        size * 0.15
     }
     
     var body: some View {

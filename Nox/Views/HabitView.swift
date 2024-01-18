@@ -13,13 +13,17 @@ struct HabitView: View {
     
     var body: some View {
         HStack{
-            ProgressRing(habit: habit, size: 32)
+            ProgressRing(habit: habit, size: 24)
             Text(habit.title)
-                .font(.RubikRegular(24))
-                .padding(8)
+                .lineLimit(1)
+                .font(.RubikRegular(18))
+                .padding(4)
             Spacer()
+            Text(habit.period.title)
+                .font(.RubikRegular(18))
         }
-        .padding(16)
+        .padding(.horizontal, 24)
+        .padding(.vertical, 16)
         .background(.background)
         .cornerRadius(16)
     }

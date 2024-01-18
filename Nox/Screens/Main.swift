@@ -54,7 +54,7 @@ struct Main: View {
     
     private func addHabit() {
         withAnimation {
-            context.insert(Habit(title: "Test", maxCount: 10, currentCount: .random(in: 1..<10)))
+            context.insert(Habit(title: "Test", period: .Weekly, maxCount: 10, currentCount: .random(in: 1..<10)))
         }
     }
     
