@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddHabit: View {
     
-    @State private var newHabit = Habit()
+    @Bindable private var newHabit = Habit()
     var save: (Habit)->()
     
     var body: some View {

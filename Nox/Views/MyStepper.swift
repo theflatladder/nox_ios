@@ -11,34 +11,44 @@ struct MyStepper: View {
     
     var title: String
     @Binding var value: Int
-    @State private var valueInt = 0{
-        didSet{
-            valueStr = String(valueInt)
-        }
-    }
-    @State private var valueStr = "0"{
-        didSet{
-            value = Int(valueStr)!
-        }
-    }
     
     var body: some View {
         HStack{
-            MyTextField(title: title, value: $valueStr, keyboardType: .numberPad)
-            Stepper("", onIncrement: {
-                valueInt += 1
-            }, onDecrement: {
-                valueInt = max(0, valueInt - 1)
-            })
+            MyNumTextField(title: title, value: $value)
+            
+            HStack{
+                Button(action: {
+                    value = max(0, value - 1)
+                }, label: {
+                    Image(systemName: "minus")
+                        .foregroundColor(.black)
+                })
+                .frame(width: 48, height: 32)
+                
+                Spacer()
+                    .frame(width: 1, height: 16)
+                    .background(Color.systemGray4)
+                
+                Button(action: {
+                    value += 1
+                }, label: {
+                    Image(systemName: "plus")
+                        .foregroundColor(.black)
+                })
+                .frame(width: 48, height: 32)
+            }
+            .frame(width: 97, height: 32)
+            .background(Color.systemGray6)
+            .cornerRadius(8)
             .padding(.top, 20)
-            .padding(.trailing, 20)
-            .frame(maxWidth: 150)
+            .padding(20)
+            
             Spacer()
         }
     }
 }
 
 #Preview {
-    @State var value = 10
-    return MyStepper(title: "Max count", value: $value)
+    @Bindable var habit = Habit.testHabit
+    return MyStepper(title: "Max count", value: $habit.maxCount)
 }

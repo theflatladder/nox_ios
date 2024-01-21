@@ -37,3 +37,29 @@ struct MyTextField: View {
     @State var value = "Test Value"
     return MyTextField(title: "Title", value: $value)
 }
+
+
+struct MyNumTextField: View {
+    
+    var title: String = ""
+    @Binding var value: Int
+    
+    var body: some View {
+        VStack{
+            HStack{
+                Text(title)
+                    .font(.RubikRegular(14))
+                    .foregroundColor(Color.systemGray)
+                Spacer()
+            }
+            TextField("", value: $value, formatter: NumberFormatter())
+                .font(.RubikRegular(18))
+                .padding(12)
+                .keyboardType(.numberPad)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.systemGray4, lineWidth: 1)
+                )
+        }
+    }
+}

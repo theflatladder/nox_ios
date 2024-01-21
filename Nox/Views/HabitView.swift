@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HabitView: View {
     
-    @State var habit: Habit
+    var habit: Habit
     
     var body: some View {
         HStack{

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProgressRing: View {
     
-    @State var habit: Habit
+    var habit: Habit
     var size: CGFloat
     var lineWidth: CGFloat {
         size * 0.15
