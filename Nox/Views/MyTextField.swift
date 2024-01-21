@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-struct MyTextField: View {
+struct MyTextField<T>: View {
     
     var title: String = ""
-    @Binding var value: String
-    var keyboardType: UIKeyboardType = .default
+    @Binding var value: T
     
     var body: some View {
         VStack{
@@ -21,14 +20,17 @@ struct MyTextField: View {
                     .foregroundColor(Color.systemGray)
                 Spacer()
             }
-            TextField("", text: $value)
-                .font(.RubikRegular(18))
-                .padding(12)
-                .keyboardType(keyboardType)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke(Color.systemGray4, lineWidth: 1)
-                )
+            (T.self == String.self
+                 ? TextField("", text: $value as! Binding<String>)
+                 : TextField("", value: $value as! Binding<Int>, formatter: NumberFormatter())
+            )
+            .font(.RubikRegular(18))
+            .padding(12)
+            .keyboardType(T.self == String.self ? .default : .numberPad)
+            .overlay(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(Color.systemGray4, lineWidth: 1)
+            )
         }
     }
 }
@@ -36,30 +38,4 @@ struct MyTextField: View {
 #Preview {
     @State var value = "Test Value"
     return MyTextField(title: "Title", value: $value)
-}
-
-
-struct MyNumTextField: View {
-    
-    var title: String = ""
-    @Binding var value: Int
-    
-    var body: some View {
-        VStack{
-            HStack{
-                Text(title)
-                    .font(.RubikRegular(14))
-                    .foregroundColor(Color.systemGray)
-                Spacer()
-            }
-            TextField("", value: $value, formatter: NumberFormatter())
-                .font(.RubikRegular(18))
-                .padding(12)
-                .keyboardType(.numberPad)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke(Color.systemGray4, lineWidth: 1)
-                )
-        }
-    }
 }

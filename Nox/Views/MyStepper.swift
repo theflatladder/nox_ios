@@ -14,7 +14,7 @@ struct MyStepper: View {
     
     var body: some View {
         HStack{
-            MyNumTextField(title: title, value: $value)
+            MyTextField(title: title, value: $value)
             
             HStack{
                 Button(action: {
