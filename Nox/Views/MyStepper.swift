@@ -21,9 +21,9 @@ struct MyStepper: View {
                     value = max(0, value - 1)
                 }, label: {
                     Image(systemName: "minus")
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
+                        .frame(width: 48, height: 32)
                 })
-                .frame(width: 48, height: 32)
                 
                 Spacer()
                     .frame(width: 1, height: 16)
@@ -33,15 +33,16 @@ struct MyStepper: View {
                     value += 1
                 }, label: {
                     Image(systemName: "plus")
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
+                        .frame(width: 48, height: 32)
                 })
-                .frame(width: 48, height: 32)
             }
             .frame(width: 97, height: 32)
             .background(Color.systemGray6)
             .cornerRadius(8)
             .padding(.top, 20)
-            .padding(20)
+            .padding(.leading, 16)
+            .padding(16)
             
             Spacer()
         }

@@ -23,6 +23,7 @@ struct AddHabit: View {
             Button("Save", action: {
                 save(newHabit)
             })
+            .foregroundColor(Color.primary)
             .buttonStyle(.bordered)
             .padding(16)
             Spacer()
