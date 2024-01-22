@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		322FE84D2B5E5D4E00351352 /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FE84C2B5E5D4E00351352 /* HabitView.swift */; };
+		322FE86E2B5EA4B500351352 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322FE86D2B5EA4B500351352 /* WidgetKit.framework */; };
+		322FE8702B5EA4B500351352 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322FE86F2B5EA4B500351352 /* SwiftUI.framework */; };
+		322FE8732B5EA4B500351352 /* WidgetExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FE8722B5EA4B500351352 /* WidgetExtensionBundle.swift */; };
+		322FE8752B5EA4B500351352 /* WidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FE8742B5EA4B500351352 /* WidgetExtension.swift */; };
+		322FE8772B5EA4B800351352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322FE8762B5EA4B800351352 /* Assets.xcassets */; };
+		322FE87B2B5EA4B800351352 /* WidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 322FE86B2B5EA4B500351352 /* WidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		322FE8822B5EA8DA00351352 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB972B57F291007B9070 /* Habit.swift */; };
 		3283C0B12B59BA82003AF226 /* PeriodPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283C0B02B59BA82003AF226 /* PeriodPicker.swift */; };
 		328DBB942B57F291007B9070 /* NoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB932B57F291007B9070 /* NoxApp.swift */; };
 		328DBB962B57F291007B9070 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB952B57F291007B9070 /* Main.swift */; };
@@ -39,8 +46,41 @@
 		32FFCD992B5954C6006B9A35 /* MyStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FFCD982B5954C6006B9A35 /* MyStepper.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		322FE8792B5EA4B800351352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 328DBB882B57F291007B9070 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 322FE86A2B5EA4B500351352;
+			remoteInfo = WidgetExtensionExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		322FE87C2B5EA4B800351352 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				322FE87B2B5EA4B800351352 /* WidgetExtensionExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		322FE84C2B5E5D4E00351352 /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
+		322FE86B2B5EA4B500351352 /* WidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		322FE86D2B5EA4B500351352 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		322FE86F2B5EA4B500351352 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		322FE8722B5EA4B500351352 /* WidgetExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtensionBundle.swift; sourceTree = "<group>"; };
+		322FE8742B5EA4B500351352 /* WidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtension.swift; sourceTree = "<group>"; };
+		322FE8762B5EA4B800351352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		322FE8782B5EA4B800351352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322FE8802B5EA6FE00351352 /* WidgetExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtensionExtension.entitlements; sourceTree = "<group>"; };
+		322FE8812B5EA70200351352 /* Nox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nox.entitlements; sourceTree = "<group>"; };
 		3283C0B02B59BA82003AF226 /* PeriodPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodPicker.swift; sourceTree = "<group>"; };
 		328DBB902B57F291007B9070 /* Nox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		328DBB932B57F291007B9070 /* NoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoxApp.swift; sourceTree = "<group>"; };
@@ -75,6 +115,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		322FE8682B5EA4B500351352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322FE8702B5EA4B500351352 /* SwiftUI.framework in Frameworks */,
+				322FE86E2B5EA4B500351352 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		328DBB8D2B57F291007B9070 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,11 +134,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		322FE86C2B5EA4B500351352 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				322FE86D2B5EA4B500351352 /* WidgetKit.framework */,
+				322FE86F2B5EA4B500351352 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		322FE8712B5EA4B500351352 /* WidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				322FE8722B5EA4B500351352 /* WidgetExtensionBundle.swift */,
+				322FE8742B5EA4B500351352 /* WidgetExtension.swift */,
+				322FE8762B5EA4B800351352 /* Assets.xcassets */,
+				322FE8782B5EA4B800351352 /* Info.plist */,
+			);
+			path = WidgetExtension;
+			sourceTree = "<group>";
+		};
 		328DBB872B57F291007B9070 = {
 			isa = PBXGroup;
 			children = (
+				322FE8802B5EA6FE00351352 /* WidgetExtensionExtension.entitlements */,
 				32F9E9BA2B58612800B222EF /* Fonts */,
 				328DBB922B57F291007B9070 /* Nox */,
+				322FE8712B5EA4B500351352 /* WidgetExtension */,
+				322FE86C2B5EA4B500351352 /* Frameworks */,
 				328DBB912B57F291007B9070 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				328DBB902B57F291007B9070 /* Nox.app */,
+				322FE86B2B5EA4B500351352 /* WidgetExtensionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +178,7 @@
 		328DBB922B57F291007B9070 /* Nox */ = {
 			isa = PBXGroup;
 			children = (
+				322FE8812B5EA70200351352 /* Nox.entitlements */,
 				32F9E9E32B586EEB00B222EF /* Models */,
 				32F9E9DE2B586EB700B222EF /* Screens */,
 				32F9E9DF2B586EBF00B222EF /* Views */,
@@ -190,6 +264,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		322FE86A2B5EA4B500351352 /* WidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322FE87F2B5EA4B800351352 /* Build configuration list for PBXNativeTarget "WidgetExtensionExtension" */;
+			buildPhases = (
+				322FE8672B5EA4B500351352 /* Sources */,
+				322FE8682B5EA4B500351352 /* Frameworks */,
+				322FE8692B5EA4B500351352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetExtensionExtension;
+			productName = WidgetExtensionExtension;
+			productReference = 322FE86B2B5EA4B500351352 /* WidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		328DBB8F2B57F291007B9070 /* Nox */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 328DBBA02B57F292007B9070 /* Build configuration list for PBXNativeTarget "Nox" */;
@@ -197,10 +288,12 @@
 				328DBB8C2B57F291007B9070 /* Sources */,
 				328DBB8D2B57F291007B9070 /* Frameworks */,
 				328DBB8E2B57F291007B9070 /* Resources */,
+				322FE87C2B5EA4B800351352 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				322FE87A2B5EA4B800351352 /* PBXTargetDependency */,
 			);
 			name = Nox;
 			productName = Nox;
@@ -217,6 +310,9 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					322FE86A2B5EA4B500351352 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					328DBB8F2B57F291007B9070 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -236,11 +332,20 @@
 			projectRoot = "";
 			targets = (
 				328DBB8F2B57F291007B9070 /* Nox */,
+				322FE86A2B5EA4B500351352 /* WidgetExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		322FE8692B5EA4B500351352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322FE8772B5EA4B800351352 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		328DBB8E2B57F291007B9070 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +374,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		322FE8672B5EA4B500351352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322FE8822B5EA8DA00351352 /* Habit.swift in Sources */,
+				322FE8732B5EA4B500351352 /* WidgetExtensionBundle.swift in Sources */,
+				322FE8752B5EA4B500351352 /* WidgetExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		328DBB8C2B57F291007B9070 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,7 +405,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		322FE87A2B5EA4B800351352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 322FE86A2B5EA4B500351352 /* WidgetExtensionExtension */;
+			targetProxy = 322FE8792B5EA4B800351352 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		322FE87D2B5EA4B800351352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3WJ45JT93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theflatladder.Nox.WidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		322FE87E2B5EA4B800351352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3WJ45JT93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theflatladder.Nox.WidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		328DBB9E2B57F292007B9070 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,8 +592,10 @@
 		328DBBA12B57F292007B9070 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Nox/Nox.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nox/Preview Content\"";
@@ -443,8 +624,10 @@
 		328DBBA22B57F292007B9070 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Nox/Nox.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nox/Preview Content\"";
@@ -473,6 +656,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		322FE87F2B5EA4B800351352 /* Build configuration list for PBXNativeTarget "WidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322FE87D2B5EA4B800351352 /* Debug */,
+				322FE87E2B5EA4B800351352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		328DBB8B2B57F291007B9070 /* Build configuration list for PBXProject "Nox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
