@@ -11,7 +11,8 @@ import WidgetKit
 struct HabitView: View {
     
     @Bindable var habit: Habit
-    @State private var plusOpacity = 1.0
+    @State private var showReturn = true
+    @State private var showPlus = true
     
     var body: some View {
         VStack(spacing: 32){
@@ -27,26 +28,50 @@ struct HabitView: View {
                         .foregroundColor(Color.systemGray)
                 }
             }
-            Button(action: {
-                habit.currentCount -= 1
-                WidgetCenter.shared.reloadAllTimelines()
-            }, label: {
-                Image(systemName: "plus")
-                    .foregroundColor(.primary)
-                    .frame(width: 48, height: 48)
-                    .background(Color.systemGray6)
-                    .cornerRadius(8)
-            })
-            .opacity(plusOpacity)
+            HStack(spacing: 16){
+                if showReturn {
+                    Button(action: {
+                        habit.currentCount += 1
+                        WidgetCenter.shared.reloadAllTimelines()
+                    }, label: {
+                        Image(systemName: "arrow.counterclockwise")
+                            .foregroundColor(.primary)
+                            .frame(width: 48, height: 48)
+                            .background(Color.systemGray6)
+                            .cornerRadius(8)
+                    })
+                }
+                
+                if showPlus {
+                    Button(action: {
+                        habit.currentCount -= 1
+                        WidgetCenter.shared.reloadAllTimelines()
+                    }, label: {
+                        Image(systemName: "plus")
+                            .foregroundColor(.primary)
+                            .frame(width: 48, height: 48)
+                            .background(Color.systemGray6)
+                            .cornerRadius(8)
+                    })
+                }
+            }
             .padding(.top, 32)
             Spacer()
         }
         .padding(.top, 48)
         .onChange(of: habit.currentCount, {
             withAnimation{
-                plusOpacity = habit.currentCount == 0 ? 0 : 1
+                updateButtons()
             }
         })
+        .onAppear{
+            updateButtons()
+        }
+    }
+    
+    func updateButtons(){
+        showReturn = habit.currentCount < habit.maxCount
+        showPlus = habit.currentCount > 0
     }
 }
 
