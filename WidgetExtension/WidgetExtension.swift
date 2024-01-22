@@ -96,7 +96,7 @@ struct WidgetExtension: Widget {
                 .containerBackground(.fill.tertiary, for: .widget)
         }
         .configurationDisplayName("Habits")
-        .description("Compact style with emoji.")
+        .description("Easy tap straight from your home screen.")
         .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
     }
 }
