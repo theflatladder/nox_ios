@@ -23,6 +23,14 @@ struct HabitListView: View {
                 .padding(4)
                 .foregroundColor(titleColor)
             Spacer()
+            
+            Text("\(habit.currentCount)")
+                .lineLimit(1)
+                .font(.RubikRegular(18))
+                .padding(4)
+                .foregroundColor(titleColor)
+            
+            /*
             Button(action: {
                 habit.currentCount -= 1
             }, label: {
@@ -39,6 +47,8 @@ struct HabitListView: View {
                     titleColor = habit.currentCount == 0 ? .systemGray : .primary
                 }
             })
+            */
+            
         }
         .padding(.horizontal, 24)
         .padding(.vertical, 16)
