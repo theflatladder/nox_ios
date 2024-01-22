@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import WidgetKit
 
 struct Main: View {
     
@@ -55,6 +56,7 @@ struct Main: View {
                             context.insert(newHabit)
                         }
                         addHabitSheet.toggle()
+                        WidgetCenter.shared.reloadAllTimelines()
                     })
                     .presentationDetents([.height(500)])
                     .presentationDragIndicator(.visible)
