@@ -17,7 +17,11 @@ struct AddHabit: View {
             Text("New habit")
                 .font(.RubikSemiBold(24))
                 .padding(.top, 16)
-            MyTextField(title: "Title", value: $newHabit.title)
+            HStack(spacing: 16){
+                MyTextField(title: "Title", value: $newHabit.title)
+                MyTextField(title: "Emoji", value: $newHabit.emoji)
+                    .frame(width: 80)
+            }
             MyStepper(title: "Max count", value: $newHabit.maxCount)
             PeriodPicker(period: $newHabit.period)
             Button("Save", action: {

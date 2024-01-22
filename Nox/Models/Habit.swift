@@ -13,20 +13,22 @@ class Habit: Identifiable {
     
     var id: String
     var title: String
+    var emoji: String
     var period: Period
     var maxCount: Int
     var currentCount: Int
     
-    init(title: String = "", period: Period = .Weekly, maxCount: Int = 10, currentCount: Int = 10) {
+    init(title: String = "", emoji: String = "", period: Period = .Weekly, maxCount: Int = 10, currentCount: Int = 10) {
         self.id = UUID().uuidString
         self.title = title
+        self.emoji = emoji
         self.period = period
         self.maxCount = maxCount
         self.currentCount = currentCount
     }
     
     static var testHabit: Habit{
-        Habit(title: "Test", period: .Weekly, maxCount: 10, currentCount: .random(in: 1..<10))
+        Habit(title: "Test", emoji: "❤️", period: .Weekly, maxCount: 10, currentCount: .random(in: 1..<10))
     }
 }
 

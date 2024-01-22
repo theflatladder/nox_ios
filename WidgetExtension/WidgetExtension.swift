@@ -44,15 +44,25 @@ struct SimpleEntry: TimelineEntry {
 
 struct WidgetExtensionEntryView : View {
     var entry: Provider.Entry
-
+    
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Habit (\(entry.habits.count)):")
-            Text(entry.habits.first?.title ?? "")
+        
+        let habit1 = entry.habits.getByIndex(0)
+        let habit2 = entry.habits.getByIndex(1)
+        let habit3 = entry.habits.getByIndex(2)
+        let habit4 = entry.habits.getByIndex(3)
+        
+        HStack(spacing: 24){
+            VStack(spacing: 24){
+                ProgressRing(habit: habit1, size: 48, showEmoji: true)
+                ProgressRing(habit: habit2, size: 48, showEmoji: true)
+            }
+            VStack(spacing: 24){
+                ProgressRing(habit: habit3, size: 48, showEmoji: true)
+                ProgressRing(habit: habit4, size: 48, showEmoji: true)
+            }
         }
+        
     }
 }
 
@@ -72,6 +82,17 @@ struct WidgetExtension: Widget {
 #Preview(as: .systemSmall) {
     WidgetExtension()
 } timeline: {
+    let modelContainer = try? ModelContainer(for: Habit.self)
     SimpleEntry(date: .now, habits: [.testHabit])
-    SimpleEntry(date: .now, habits: [.testHabit])
+}
+
+
+
+extension Array{
+    func getByIndex(_ index: Int) -> Element?{
+        if indices.contains(index) {
+            return self[index]
+        }
+        return nil
+    }
 }
