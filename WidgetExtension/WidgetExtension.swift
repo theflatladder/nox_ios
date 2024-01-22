@@ -43,26 +43,46 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct WidgetExtensionEntryView : View {
+    @Environment(\.widgetFamily) var widgetStyle
+    
     var entry: Provider.Entry
     
     var body: some View {
-        
-        let habit1 = entry.habits.getByIndex(0)
-        let habit2 = entry.habits.getByIndex(1)
-        let habit3 = entry.habits.getByIndex(2)
-        let habit4 = entry.habits.getByIndex(3)
-        
-        HStack(spacing: 24){
+        if [.systemSmall, .systemMedium].contains(widgetStyle){
+            let row1 = widgetStyle == .systemSmall ? [0,1] : [0,1,2,3]
+            let row2 = widgetStyle == .systemSmall ? [2,3] : [4,5,6,7]
             VStack(spacing: 24){
-                ProgressRing(habit: habit1, size: 48, showEmoji: true)
-                ProgressRing(habit: habit2, size: 48, showEmoji: true)
-            }
-            VStack(spacing: 24){
-                ProgressRing(habit: habit3, size: 48, showEmoji: true)
-                ProgressRing(habit: habit4, size: 48, showEmoji: true)
+                HStack(spacing: 24){
+                    ForEach(row1, id: \.self){
+                        ProgressRing(habit: entry.habits.getByIndex($0), size: 48, showEmoji: true)
+                    }
+                }
+                HStack(spacing: 24){
+                    ForEach(row2, id: \.self){
+                        ProgressRing(habit: entry.habits.getByIndex($0), size: 48, showEmoji: true)
+                    }
+                }
             }
         }
         
+        if widgetStyle == .systemLarge{
+            VStack(spacing: 16){
+                ForEach(0..<8){
+                    let habit = entry.habits.getByIndex($0)
+                    HStack(spacing: 16){
+                        ProgressRing(habit: habit, size: 24)
+                        Text(habit?.title ?? "-----")
+                            .font(.RubikRegular(16))
+                            .foregroundColor(habit == nil || habit!.currentCount == 0 ? .systemGray2 : .primary)
+                        Spacer()
+                        Text(habit == nil ? "" : "\(habit?.currentCount ?? 0)")
+                            .font(.RubikRegular(16))
+                            .foregroundColor(habit == nil || habit!.currentCount == 0 ? .systemGray2 : .primary)
+                    }
+                }
+            }
+            .padding(16)
+        }
     }
 }
 
@@ -74,8 +94,9 @@ struct WidgetExtension: Widget {
             WidgetExtensionEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Habits")
+        .description("Compact style with emoji.")
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
     }
 }
 
