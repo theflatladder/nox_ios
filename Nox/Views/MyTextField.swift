@@ -24,6 +24,10 @@ struct MyTextField<T>: View {
                  ? TextField("", text: $value as! Binding<String>)
                  : TextField("", value: $value as! Binding<Int>, formatter: NumberFormatter())
             )
+            .submitLabel(.next)
+            .onSubmit {
+                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+            }
             .font(.RubikRegular(18))
             .padding(12)
             .keyboardType(T.self == String.self ? .default : .numberPad)

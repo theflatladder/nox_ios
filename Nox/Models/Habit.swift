@@ -32,7 +32,7 @@ class Habit: Identifiable {
 
 enum Period: Int, Codable, CaseIterable, Identifiable{
     
-    var id: Self { self }
+    var id: Period { self }
     
     case Dayly = 0
     case Weekly = 1

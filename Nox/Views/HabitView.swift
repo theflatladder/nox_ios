@@ -19,7 +19,7 @@ struct HabitView: View {
                 .font(.RubikRegular(18))
                 .padding(4)
             Spacer()
-            Text(habit.period.title)
+            Text(habit.period.title.first!.uppercased())
                 .font(.RubikRegular(18))
         }
         .padding(.horizontal, 24)

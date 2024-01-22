@@ -22,7 +22,7 @@ struct PeriodPicker: View {
             Picker("", selection: $period) {
                 ForEach(Period.allCases){
                     Text($0.title)
-                        .tag(Period.allCases.firstIndex(of: $0))
+                        .tag($0.rawValue)
                 }
             }
             .pickerStyle(.segmented)
@@ -32,5 +32,6 @@ struct PeriodPicker: View {
 
 #Preview {
     @State var period: Period = .Weekly
-    return PeriodPicker(period: $period)
+    @Bindable var newHabit = Habit()
+    return PeriodPicker(period: $newHabit.period)
 }
