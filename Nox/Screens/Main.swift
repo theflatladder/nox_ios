@@ -22,13 +22,15 @@ struct Main: View {
                 //list of habits
                 List {
                     ForEach(habits) { habit in
-                        HabitView(habit: habit)
+                        HabitListView(habit: habit)
+                        
                             .overlay(
                                 NavigationLink(
-                                    destination: { Text(habit.title) },
+                                    destination: { HabitView(habit: habit) },
                                     label: { EmptyView() }
                                 ).opacity(0)
                             )
+                         
                             .listRowSeparator(.hidden)
                             .listRowBackground(Color.clear)
                             .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))

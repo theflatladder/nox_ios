@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322FE84D2B5E5D4E00351352 /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FE84C2B5E5D4E00351352 /* HabitView.swift */; };
 		3283C0B12B59BA82003AF226 /* PeriodPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283C0B02B59BA82003AF226 /* PeriodPicker.swift */; };
 		328DBB942B57F291007B9070 /* NoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB932B57F291007B9070 /* NoxApp.swift */; };
 		328DBB962B57F291007B9070 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB952B57F291007B9070 /* Main.swift */; };
 		328DBB982B57F291007B9070 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB972B57F291007B9070 /* Habit.swift */; };
 		328DBB9A2B57F292007B9070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328DBB992B57F292007B9070 /* Assets.xcassets */; };
 		328DBB9D2B57F292007B9070 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328DBB9C2B57F292007B9070 /* Preview Assets.xcassets */; };
-		32F9E9B72B57FE8100B222EF /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9E9B62B57FE8100B222EF /* HabitView.swift */; };
+		32F9E9B72B57FE8100B222EF /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9E9B62B57FE8100B222EF /* HabitListView.swift */; };
 		32F9E9B92B585CF900B222EF /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9E9B82B585CF900B222EF /* ProgressRing.swift */; };
 		32F9E9CB2B58613D00B222EF /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9BB2B58613C00B222EF /* Rubik-LightItalic.ttf */; };
 		32F9E9CC2B58613D00B222EF /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9BC2B58613C00B222EF /* Rubik-MediumItalic.ttf */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		322FE84C2B5E5D4E00351352 /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
 		3283C0B02B59BA82003AF226 /* PeriodPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodPicker.swift; sourceTree = "<group>"; };
 		328DBB902B57F291007B9070 /* Nox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		328DBB932B57F291007B9070 /* NoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoxApp.swift; sourceTree = "<group>"; };
@@ -46,7 +48,7 @@
 		328DBB972B57F291007B9070 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		328DBB992B57F292007B9070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		328DBB9C2B57F292007B9070 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		32F9E9B62B57FE8100B222EF /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
+		32F9E9B62B57FE8100B222EF /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
 		32F9E9B82B585CF900B222EF /* ProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
 		32F9E9BB2B58613C00B222EF /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
 		32F9E9BC2B58613C00B222EF /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				328DBB952B57F291007B9070 /* Main.swift */,
 				32FFCD942B594F82006B9A35 /* AddHabit.swift */,
+				322FE84C2B5E5D4E00351352 /* HabitView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -158,7 +161,7 @@
 		32F9E9DF2B586EBF00B222EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				32F9E9B62B57FE8100B222EF /* HabitView.swift */,
+				32F9E9B62B57FE8100B222EF /* HabitListView.swift */,
 				32F9E9B82B585CF900B222EF /* ProgressRing.swift */,
 				32FFCD962B5951F3006B9A35 /* MyTextField.swift */,
 				32FFCD982B5954C6006B9A35 /* MyStepper.swift */,
@@ -271,7 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				328DBB962B57F291007B9070 /* Main.swift in Sources */,
-				32F9E9B72B57FE8100B222EF /* HabitView.swift in Sources */,
+				32F9E9B72B57FE8100B222EF /* HabitListView.swift in Sources */,
 				3283C0B12B59BA82003AF226 /* PeriodPicker.swift in Sources */,
 				32FFCD952B594F82006B9A35 /* AddHabit.swift in Sources */,
 				32FFCD992B5954C6006B9A35 /* MyStepper.swift in Sources */,
@@ -279,6 +282,7 @@
 				32F9E9E22B586ECE00B222EF /* Font.swift in Sources */,
 				328DBB982B57F291007B9070 /* Habit.swift in Sources */,
 				32FFCD972B5951F3006B9A35 /* MyTextField.swift in Sources */,
+				322FE84D2B5E5D4E00351352 /* HabitView.swift in Sources */,
 				328DBB942B57F291007B9070 /* NoxApp.swift in Sources */,
 				32F9E9B92B585CF900B222EF /* ProgressRing.swift in Sources */,
 			);

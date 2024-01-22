@@ -31,7 +31,6 @@ struct PeriodPicker: View {
 }
 
 #Preview {
-    @State var period: Period = .Weekly
     @Bindable var newHabit = Habit()
     return PeriodPicker(period: $newHabit.period)
 }
