@@ -26,6 +26,7 @@ struct AddHabit: View {
             PeriodPicker(period: $newHabit.period)
             Button("Save", action: {
                 newHabit.currentCount = newHabit.maxCount
+                newHabit.creationDate = Date()
                 save(newHabit)
             })
             .foregroundColor(Color.primary)

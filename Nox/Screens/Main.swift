@@ -21,7 +21,7 @@ struct Main: View {
                 
                 //list of habits
                 List {
-                    ForEach(habits) { habit in
+                    ForEach(habits.sorted(by: { $0.creationDate < $1.creationDate })) { habit in
                         HabitListView(habit: habit)
                         
                             .overlay(

@@ -12,6 +12,7 @@ import SwiftData
 class Habit: Identifiable {
     
     var id: String
+    var creationDate: Date
     var title: String
     var emoji: String
     var period: Period
@@ -20,6 +21,7 @@ class Habit: Identifiable {
     
     init(title: String = "", emoji: String = "", period: Period = .Weekly, maxCount: Int = 10, currentCount: Int = 10) {
         self.id = UUID().uuidString
+        self.creationDate = Date()
         self.title = title
         self.emoji = emoji
         self.period = period

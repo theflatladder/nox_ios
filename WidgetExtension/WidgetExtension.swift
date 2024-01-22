@@ -8,6 +8,7 @@
 import WidgetKit
 import SwiftUI
 import SwiftData
+import AppIntents
 
 struct Provider: TimelineProvider {
     @MainActor func placeholder(in context: Context) -> SimpleEntry {
@@ -33,7 +34,7 @@ struct Provider: TimelineProvider {
         else { return [] }
         let descriptor = FetchDescriptor<Habit>()
         let habits = try? modelContainer.mainContext.fetch(descriptor)
-        return habits ?? []
+        return habits?.sorted(by: { $0.creationDate < $1.creationDate }) ?? []
     }
 }
 
@@ -97,6 +98,32 @@ struct WidgetExtension: Widget {
         .configurationDisplayName("Habits")
         .description("Compact style with emoji.")
         .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
+    }
+}
+
+struct HabitTapIntent: AppIntent{
+    
+    static var title: LocalizedStringResource = "HabitTap"
+    
+    @Parameter(title: "habitId")
+    var habitId: String?
+    
+    init(){ }
+    init(habitId: String?) {
+        self.habitId = habitId
+    }
+    
+    @MainActor
+    func perform() async throws -> some IntentResult {
+        let modelContainer = try ModelContainer(for: Habit.self)
+        let descriptor = FetchDescriptor<Habit>()
+        let habits = try modelContainer.mainContext.fetch(descriptor)
+        let habit = habits.first(where: {$0.id == habitId})
+        habit?.currentCount = max(0, (habit?.currentCount ?? 0) - 1)
+        try modelContainer.mainContext.save()
+        
+        WidgetCenter.shared.reloadAllTimelines()
+        return .result()
     }
 }
 

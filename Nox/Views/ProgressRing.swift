@@ -27,9 +27,16 @@ struct ProgressRing: View {
                 .foregroundColor(Color.additional)
                 .rotationEffect(.degrees(270))
                 .animation(.easeOut, value: habit?.currentCount ?? 0)
-            Text(habit?.emoji ?? "")
-                .font(.RubikRegular(size * 0.33))
-                .opacity(showEmoji ? 1 : 0)
+            
+            Button(intent: HabitTapIntent(habitId: habit?.id), label: {
+                Text(habit?.emoji ?? "")
+                    .frame(width: size - lineWidth, height: size - lineWidth)
+                    .contentShape(Circle())
+                    .font(.RubikRegular(size * 0.33))
+                    .cornerRadius(size/2)
+            })
+            .buttonStyle(.plain)
+            .opacity(showEmoji ? 1 : 0)
         }
         .frame(width: size, height: size)
     }
