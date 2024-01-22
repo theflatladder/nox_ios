@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct HabitView: View {
     
@@ -28,6 +29,7 @@ struct HabitView: View {
             }
             Button(action: {
                 habit.currentCount -= 1
+                WidgetCenter.shared.reloadAllTimelines()
             }, label: {
                 Image(systemName: "plus")
                     .foregroundColor(.primary)

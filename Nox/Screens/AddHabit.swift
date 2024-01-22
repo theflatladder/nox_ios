@@ -25,6 +25,7 @@ struct AddHabit: View {
             MyStepper(title: "Max count", value: $newHabit.maxCount)
             PeriodPicker(period: $newHabit.period)
             Button("Save", action: {
+                newHabit.currentCount = newHabit.maxCount
                 save(newHabit)
             })
             .foregroundColor(Color.primary)
