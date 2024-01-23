@@ -11,7 +11,7 @@ struct ProgressRing: View {
     
     var habit: Habit?
     var size: CGFloat
-    var showEmoji = false
+    var tapActive = false
     var lineWidth: CGFloat {
         size * 0.15
     }
@@ -36,12 +36,12 @@ struct ProgressRing: View {
                     .cornerRadius(size/2)
             })
             .buttonStyle(.plain)
-            .opacity(showEmoji ? 1 : 0)
+            .opacity(tapActive ? 1 : 0)
         }
         .frame(width: size, height: size)
     }
 }
 
 #Preview {
-    ProgressRing(habit: .testHabit, size: 100, showEmoji: true)
+    ProgressRing(habit: .testHabit, size: 100, tapActive: true)
 }

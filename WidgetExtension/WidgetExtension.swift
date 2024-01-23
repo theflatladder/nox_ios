@@ -49,29 +49,29 @@ struct WidgetExtensionEntryView : View {
     var entry: Provider.Entry
     
     var body: some View {
-        if [.systemSmall, .systemMedium].contains(widgetStyle){
+        if [.systemSmall/*, .systemMedium*/].contains(widgetStyle){
             let row1 = widgetStyle == .systemSmall ? [0,1] : [0,1,2,3]
             let row2 = widgetStyle == .systemSmall ? [2,3] : [4,5,6,7]
             VStack(spacing: 24){
                 HStack(spacing: 24){
                     ForEach(row1, id: \.self){
-                        ProgressRing(habit: entry.habits.getByIndex($0), size: 48, showEmoji: true)
+                        ProgressRing(habit: entry.habits.getByIndex($0), size: 48, tapActive: true)
                     }
                 }
                 HStack(spacing: 24){
                     ForEach(row2, id: \.self){
-                        ProgressRing(habit: entry.habits.getByIndex($0), size: 48, showEmoji: true)
+                        ProgressRing(habit: entry.habits.getByIndex($0), size: 48, tapActive: true)
                     }
                 }
             }
         }
         
-        if widgetStyle == .systemLarge{
-            VStack(spacing: 16){
-                ForEach(0..<8){
+        if [.systemMedium, .systemLarge].contains(widgetStyle){
+            VStack(spacing: widgetStyle == .systemMedium ? 8 : 16){
+                ForEach(widgetStyle == .systemMedium ? [0,1,2,3] : [0,1,2,3,4,5,6,7], id: \.self){
                     let habit = entry.habits.getByIndex($0)
                     HStack(spacing: 16){
-                        ProgressRing(habit: habit, size: 24)
+                        ProgressRing(habit: habit, size: 24, tapActive: true)
                         Text(habit?.title ?? "-----")
                             .font(.RubikRegular(16))
                             .foregroundColor(habit == nil || habit!.currentCount == 0 ? .systemGray2 : .primary)
@@ -127,7 +127,7 @@ struct HabitTapIntent: AppIntent{
     }
 }
 
-#Preview(as: .systemLarge) {
+#Preview(as: .systemMedium) {
     WidgetExtension()
 } timeline: {
     let modelContainer = try? ModelContainer(for: Habit.self)
