@@ -127,7 +127,7 @@ struct HabitTapIntent: AppIntent{
     }
 }
 
-#Preview(as: .systemSmall) {
+#Preview(as: .systemLarge) {
     WidgetExtension()
 } timeline: {
     let modelContainer = try? ModelContainer(for: Habit.self)

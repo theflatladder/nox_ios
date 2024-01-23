@@ -42,6 +42,32 @@
 		328DBB982B57F291007B9070 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB972B57F291007B9070 /* Habit.swift */; };
 		328DBB9A2B57F292007B9070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328DBB992B57F292007B9070 /* Assets.xcassets */; };
 		328DBB9D2B57F292007B9070 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328DBB9C2B57F292007B9070 /* Preview Assets.xcassets */; };
+		32E1BF4F2B600B500079903B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322FE86D2B5EA4B500351352 /* WidgetKit.framework */; };
+		32E1BF502B600B500079903B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322FE86F2B5EA4B500351352 /* SwiftUI.framework */; };
+		32E1BF532B600B500079903B /* MainFocusWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E1BF522B600B500079903B /* MainFocusWidgetBundle.swift */; };
+		32E1BF552B600B500079903B /* MainFocusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E1BF542B600B500079903B /* MainFocusWidget.swift */; };
+		32E1BF572B600B510079903B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E1BF562B600B510079903B /* Assets.xcassets */; };
+		32E1BF5B2B600B510079903B /* MainFocusWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 32E1BF4E2B600B500079903B /* MainFocusWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		32E1BF5F2B600B5C0079903B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328DBB992B57F292007B9070 /* Assets.xcassets */; };
+		32E1BF602B600B980079903B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9E9E42B587B0300B222EF /* Color.swift */; };
+		32E1BF612B600B980079903B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9E9E12B586ECE00B222EF /* Font.swift */; };
+		32E1BF642B603CB40079903B /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E1BF622B603A510079903B /* Quotes.swift */; };
+		32E1BF682B6041D40079903B /* Rubik-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9C82B58613D00B222EF /* Rubik-Italic-VariableFont_wght.ttf */; };
+		32E1BF692B6041D40079903B /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9C92B58613D00B222EF /* Rubik-Italic.ttf */; };
+		32E1BF6A2B6041D40079903B /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9C62B58613D00B222EF /* Rubik-Medium.ttf */; };
+		32E1BF6B2B6041D40079903B /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9BB2B58613C00B222EF /* Rubik-LightItalic.ttf */; };
+		32E1BF6C2B6041D40079903B /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9C42B58613D00B222EF /* Rubik-SemiBoldItalic.ttf */; };
+		32E1BF6D2B6041D40079903B /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9C22B58613D00B222EF /* Rubik-Light.ttf */; };
+		32E1BF6E2B6041D40079903B /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9BE2B58613C00B222EF /* Rubik-BoldItalic.ttf */; };
+		32E1BF6F2B6041D40079903B /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9C72B58613D00B222EF /* Rubik-VariableFont_wght.ttf */; };
+		32E1BF702B6041D40079903B /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9C32B58613D00B222EF /* Rubik-Black.ttf */; };
+		32E1BF712B6041D40079903B /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9BC2B58613C00B222EF /* Rubik-MediumItalic.ttf */; };
+		32E1BF722B6041D40079903B /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9C52B58613D00B222EF /* Rubik-SemiBold.ttf */; };
+		32E1BF732B6041D40079903B /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9BD2B58613C00B222EF /* Rubik-BlackItalic.ttf */; };
+		32E1BF742B6041D40079903B /* Rubik-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9BF2B58613C00B222EF /* Rubik-ExtraBoldItalic.ttf */; };
+		32E1BF752B6041D40079903B /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9C12B58613D00B222EF /* Rubik-Bold.ttf */; };
+		32E1BF762B6041D40079903B /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9C02B58613C00B222EF /* Rubik-Regular.ttf */; };
+		32E1BF772B6041D40079903B /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9CA2B58613D00B222EF /* Rubik-ExtraBold.ttf */; };
 		32F9E9B72B57FE8100B222EF /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9E9B62B57FE8100B222EF /* HabitListView.swift */; };
 		32F9E9B92B585CF900B222EF /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9E9B82B585CF900B222EF /* ProgressRing.swift */; };
 		32F9E9CB2B58613D00B222EF /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32F9E9BB2B58613C00B222EF /* Rubik-LightItalic.ttf */; };
@@ -75,6 +101,13 @@
 			remoteGlobalIDString = 322FE86A2B5EA4B500351352;
 			remoteInfo = WidgetExtensionExtension;
 		};
+		32E1BF592B600B510079903B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 328DBB882B57F291007B9070 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32E1BF4D2B600B500079903B;
+			remoteInfo = MainFocusWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,6 +117,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				32E1BF5B2B600B510079903B /* MainFocusWidgetExtension.appex in Embed Foundation Extensions */,
 				322FE87B2B5EA4B800351352 /* WidgetExtensionExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -109,6 +143,12 @@
 		328DBB972B57F291007B9070 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		328DBB992B57F292007B9070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		328DBB9C2B57F292007B9070 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32E1BF4E2B600B500079903B /* MainFocusWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MainFocusWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E1BF522B600B500079903B /* MainFocusWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFocusWidgetBundle.swift; sourceTree = "<group>"; };
+		32E1BF542B600B500079903B /* MainFocusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFocusWidget.swift; sourceTree = "<group>"; };
+		32E1BF562B600B510079903B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32E1BF582B600B510079903B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32E1BF622B603A510079903B /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 		32F9E9B62B57FE8100B222EF /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
 		32F9E9B82B585CF900B222EF /* ProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
 		32F9E9BB2B58613C00B222EF /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -152,6 +192,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		32E1BF4B2B600B500079903B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E1BF502B600B500079903B /* SwiftUI.framework in Frameworks */,
+				32E1BF4F2B600B500079903B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -182,6 +231,7 @@
 				32F9E9BA2B58612800B222EF /* Fonts */,
 				328DBB922B57F291007B9070 /* Nox */,
 				322FE8712B5EA4B500351352 /* WidgetExtension */,
+				32E1BF512B600B500079903B /* MainFocusWidget */,
 				322FE86C2B5EA4B500351352 /* Frameworks */,
 				328DBB912B57F291007B9070 /* Products */,
 			);
@@ -192,6 +242,7 @@
 			children = (
 				328DBB902B57F291007B9070 /* Nox.app */,
 				322FE86B2B5EA4B500351352 /* WidgetExtensionExtension.appex */,
+				32E1BF4E2B600B500079903B /* MainFocusWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +269,18 @@
 				328DBB9C2B57F292007B9070 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		32E1BF512B600B500079903B /* MainFocusWidget */ = {
+			isa = PBXGroup;
+			children = (
+				32E1BF522B600B500079903B /* MainFocusWidgetBundle.swift */,
+				32E1BF542B600B500079903B /* MainFocusWidget.swift */,
+				32E1BF562B600B510079903B /* Assets.xcassets */,
+				32E1BF582B600B510079903B /* Info.plist */,
+				32E1BF622B603A510079903B /* Quotes.swift */,
+			);
+			path = MainFocusWidget;
 			sourceTree = "<group>";
 		};
 		32F9E9BA2B58612800B222EF /* Fonts */ = {
@@ -315,11 +378,29 @@
 			);
 			dependencies = (
 				322FE87A2B5EA4B800351352 /* PBXTargetDependency */,
+				32E1BF5A2B600B510079903B /* PBXTargetDependency */,
 			);
 			name = Nox;
 			productName = Nox;
 			productReference = 328DBB902B57F291007B9070 /* Nox.app */;
 			productType = "com.apple.product-type.application";
+		};
+		32E1BF4D2B600B500079903B /* MainFocusWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32E1BF5C2B600B510079903B /* Build configuration list for PBXNativeTarget "MainFocusWidgetExtension" */;
+			buildPhases = (
+				32E1BF4A2B600B500079903B /* Sources */,
+				32E1BF4B2B600B500079903B /* Frameworks */,
+				32E1BF4C2B600B500079903B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MainFocusWidgetExtension;
+			productName = MainFocusWidgetExtension;
+			productReference = 32E1BF4E2B600B500079903B /* MainFocusWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -335,6 +416,9 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					328DBB8F2B57F291007B9070 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					32E1BF4D2B600B500079903B = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -354,6 +438,7 @@
 			targets = (
 				328DBB8F2B57F291007B9070 /* Nox */,
 				322FE86A2B5EA4B500351352 /* WidgetExtensionExtension */,
+				32E1BF4D2B600B500079903B /* MainFocusWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -409,6 +494,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		32E1BF4C2B600B500079903B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E1BF692B6041D40079903B /* Rubik-Italic.ttf in Resources */,
+				32E1BF722B6041D40079903B /* Rubik-SemiBold.ttf in Resources */,
+				32E1BF682B6041D40079903B /* Rubik-Italic-VariableFont_wght.ttf in Resources */,
+				32E1BF742B6041D40079903B /* Rubik-ExtraBoldItalic.ttf in Resources */,
+				32E1BF5F2B600B5C0079903B /* Assets.xcassets in Resources */,
+				32E1BF752B6041D40079903B /* Rubik-Bold.ttf in Resources */,
+				32E1BF732B6041D40079903B /* Rubik-BlackItalic.ttf in Resources */,
+				32E1BF702B6041D40079903B /* Rubik-Black.ttf in Resources */,
+				32E1BF6B2B6041D40079903B /* Rubik-LightItalic.ttf in Resources */,
+				32E1BF572B600B510079903B /* Assets.xcassets in Resources */,
+				32E1BF772B6041D40079903B /* Rubik-ExtraBold.ttf in Resources */,
+				32E1BF6D2B6041D40079903B /* Rubik-Light.ttf in Resources */,
+				32E1BF712B6041D40079903B /* Rubik-MediumItalic.ttf in Resources */,
+				32E1BF6A2B6041D40079903B /* Rubik-Medium.ttf in Resources */,
+				32E1BF762B6041D40079903B /* Rubik-Regular.ttf in Resources */,
+				32E1BF6E2B6041D40079903B /* Rubik-BoldItalic.ttf in Resources */,
+				32E1BF6C2B6041D40079903B /* Rubik-SemiBoldItalic.ttf in Resources */,
+				32E1BF6F2B6041D40079903B /* Rubik-VariableFont_wght.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -445,6 +555,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		32E1BF4A2B600B500079903B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E1BF612B600B980079903B /* Font.swift in Sources */,
+				32E1BF532B600B500079903B /* MainFocusWidgetBundle.swift in Sources */,
+				32E1BF642B603CB40079903B /* Quotes.swift in Sources */,
+				32E1BF552B600B500079903B /* MainFocusWidget.swift in Sources */,
+				32E1BF602B600B980079903B /* Color.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -452,6 +574,11 @@
 			isa = PBXTargetDependency;
 			target = 322FE86A2B5EA4B500351352 /* WidgetExtensionExtension */;
 			targetProxy = 322FE8792B5EA4B800351352 /* PBXContainerItemProxy */;
+		};
+		32E1BF5A2B600B510079903B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32E1BF4D2B600B500079903B /* MainFocusWidgetExtension */;
+			targetProxy = 32E1BF592B600B510079903B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -695,6 +822,60 @@
 			};
 			name = Release;
 		};
+		32E1BF5D2B600B510079903B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3WJ45JT93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MainFocusWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MainFocusWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theflatladder.Nox.MainFocusWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32E1BF5E2B600B510079903B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3WJ45JT93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MainFocusWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MainFocusWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theflatladder.Nox.MainFocusWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -721,6 +902,15 @@
 			buildConfigurations = (
 				328DBBA12B57F292007B9070 /* Debug */,
 				328DBBA22B57F292007B9070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32E1BF5C2B600B510079903B /* Build configuration list for PBXNativeTarget "MainFocusWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32E1BF5D2B600B510079903B /* Debug */,
+				32E1BF5E2B600B510079903B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
