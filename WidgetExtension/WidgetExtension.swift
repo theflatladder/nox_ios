@@ -49,40 +49,48 @@ struct WidgetExtensionEntryView : View {
     var entry: Provider.Entry
     
     var body: some View {
-        if [.systemSmall/*, .systemMedium*/].contains(widgetStyle){
-            let row1 = widgetStyle == .systemSmall ? [0,1] : [0,1,2,3]
-            let row2 = widgetStyle == .systemSmall ? [2,3] : [4,5,6,7]
+        if widgetStyle == .systemSmall{
             VStack(spacing: 24){
-                HStack(spacing: 24){
-                    ForEach(row1, id: \.self){
-                        ProgressRing(habit: entry.habits.getByIndex($0), size: 48, tapActive: true)
-                    }
-                }
-                HStack(spacing: 24){
-                    ForEach(row2, id: \.self){
-                        ProgressRing(habit: entry.habits.getByIndex($0), size: 48, tapActive: true)
+                ForEach([[0,1], [2,3]], id: \.self){pair in
+                    HStack(spacing: 24){
+                        ForEach(pair, id: \.self){
+                            ProgressRing(habit: entry.habits.getByIndex($0), size: 48, tapActive: true, emoji: true)
+                        }
                     }
                 }
             }
         }
         
-        if [.systemMedium, .systemLarge].contains(widgetStyle){
-            VStack(spacing: widgetStyle == .systemMedium ? 8 : 16){
-                ForEach(widgetStyle == .systemMedium ? [0,1,2,3] : [0,1,2,3,4,5,6,7], id: \.self){
-                    let habit = entry.habits.getByIndex($0)
-                    HStack(spacing: 16){
-                        ProgressRing(habit: habit, size: 24, tapActive: true)
-                        Text(habit?.title ?? "-----")
-                            .font(.RubikRegular(16))
-                            .foregroundColor(habit == nil || habit!.currentCount == 0 ? .systemGray2 : .primary)
-                        Spacer()
-                        Text(habit == nil ? "" : "\(habit?.currentCount ?? 0)")
-                            .font(.RubikRegular(16))
-                            .foregroundColor(habit == nil || habit!.currentCount == 0 ? .systemGray2 : .primary)
+        if widgetStyle == .systemMedium{ //TODO: make foreach without doubling HabitLine
+            HStack{
+                VStack(spacing: 8){
+                    ForEach([0,2,4,6], id: \.self){
+                        HabitLine(habit: entry.habits.getByIndex($0))
+                    }
+                }
+                VStack(spacing: 8){
+                    ForEach([1,3,5,7], id: \.self){
+                        HabitLine(habit: entry.habits.getByIndex($0))
                     }
                 }
             }
-            .padding(16)
+            .padding(8)
+        }
+    }
+}
+
+struct HabitLine : View {
+    
+    var habit: Habit?
+    
+    var body: some View {
+        HStack(spacing: 16){
+            ProgressRing(habit: habit, size: 22, tapActive: true, emoji: false)
+            Text(habit?.title ?? "-----")
+                .padding(.leading, -8) //TODO: find the actual spacing and remove this line
+                .font(.RubikRegular(14))
+                .foregroundColor(habit == nil || habit!.currentCount == 0 ? .systemGray2 : .primary)
+            Spacer()
         }
     }
 }
@@ -97,7 +105,7 @@ struct WidgetExtension: Widget {
         }
         .configurationDisplayName("Habits")
         .description("Easy tap straight from your home screen.")
-        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 

@@ -12,6 +12,7 @@ struct ProgressRing: View {
     var habit: Habit?
     var size: CGFloat
     var tapActive = false
+    var emoji = false
     var lineWidth: CGFloat {
         size * 0.15
     }
@@ -29,16 +30,23 @@ struct ProgressRing: View {
                 .animation(.easeOut, value: habit?.currentCount ?? 0)
             
             Button(intent: HabitTapIntent(habitId: habit?.id), label: {
-                Text(habit?.emoji ?? "")
+                Text(emoji ? (habit?.emoji ?? "") : (habit?.currentCount.toString() ?? ""))
+                    .foregroundColor(habit == nil || habit!.currentCount == 0 ? .systemGray2 : .primary)
+                    .font(.RubikRegular(emoji ? size * 0.33 : size * 0.5))
                     .frame(width: size - lineWidth, height: size - lineWidth)
                     .contentShape(Circle())
-                    .font(.RubikRegular(size * 0.33))
                     .cornerRadius(size/2)
             })
             .buttonStyle(.plain)
             .opacity(tapActive ? 1 : 0)
         }
         .frame(width: size, height: size)
+    }
+}
+
+extension Int{
+    func toString() -> String{
+        String(self)
     }
 }
 
