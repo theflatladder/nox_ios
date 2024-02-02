@@ -18,6 +18,7 @@ class Habit: Identifiable {
     var period: Period
     var maxCount: Int
     var currentCount: Int
+    var lastUpdate: Date?
     
     init(title: String = "", emoji: String = "", period: Period = .Weekly, maxCount: Int = 10, currentCount: Int = 10) {
         self.id = UUID().uuidString

@@ -34,6 +34,34 @@ struct Provider: TimelineProvider {
         else { return [] }
         let descriptor = FetchDescriptor<Habit>()
         let habits = try? modelContainer.mainContext.fetch(descriptor)
+        
+        let today = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: Date())!
+        let todayComponents = Calendar.current.dateComponents([.weekday, .day, .month], from: today)
+        for habit in habits?.filter({ $0.lastUpdate == nil || $0.lastUpdate! < today }) ?? [] {
+            habit.lastUpdate = today
+            switch habit.period{
+            case .Dayly:
+                habit.currentCount = habit.maxCount
+                break
+            case .Weekly:
+                if todayComponents.weekday == 1{
+                    habit.currentCount = habit.maxCount
+                }
+                break
+            case .Monthly:
+                if todayComponents.day == 1{
+                    habit.currentCount = habit.maxCount
+                }
+                break
+            case .Yearly:
+                if todayComponents.day == 1 && todayComponents.month == 1{
+                    habit.currentCount = habit.maxCount
+                }
+                break
+            }
+        }
+        try? modelContainer.mainContext.save()
+        
         return habits?.sorted(by: { $0.creationDate < $1.creationDate }) ?? []
     }
 }
@@ -61,16 +89,13 @@ struct WidgetExtensionEntryView : View {
             }
         }
         
-        if widgetStyle == .systemMedium{ //TODO: make foreach without doubling HabitLine
-            HStack{
-                VStack(spacing: 8){
-                    ForEach([0,2,4,6], id: \.self){
-                        HabitLine(habit: entry.habits.getByIndex($0))
-                    }
-                }
-                VStack(spacing: 8){
-                    ForEach([1,3,5,7], id: \.self){
-                        HabitLine(habit: entry.habits.getByIndex($0))
+        if widgetStyle == .systemMedium{
+            VStack(spacing: 8){
+                ForEach([[0,1],[2,3],[4,5],[6,7]], id: \.self){pair in
+                    HStack{
+                        ForEach(pair, id: \.self){
+                            HabitLine(habit: entry.habits.getByIndex($0))
+                        }
                     }
                 }
             }
