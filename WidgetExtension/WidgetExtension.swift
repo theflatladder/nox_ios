@@ -90,7 +90,7 @@ struct HabitLine : View {
                 .padding(.leading, -8) //TODO: find the actual spacing and remove this line
                 .font(.RubikRegular(14))
                 .foregroundColor(habit == nil || habit!.currentCount == 0 ? .systemGray2 : .primary)
-            Spacer()
+            Spacer(minLength: 0)
         }
     }
 }

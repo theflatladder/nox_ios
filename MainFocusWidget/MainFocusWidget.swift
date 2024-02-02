@@ -63,7 +63,7 @@ struct MainFocusWidgetEntryView : View {
             }
             VStack(spacing: widgetStyle == .systemSmall ? 8 : 16) {
                 Text("🎯 \(currentTarget)")
-                    .font(.RubikSemiBold(widgetStyle == .systemSmall ? 12 : 14))
+                    .font(.RubikSemiBold(14))
                 Text(entry.quote)
                     .font(.RubikRegular(widgetStyle == .systemSmall ? 12 : 14))
                     .multilineTextAlignment(.center)
