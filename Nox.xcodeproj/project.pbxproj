@@ -136,6 +136,7 @@
 		322FE8782B5EA4B800351352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		322FE8802B5EA6FE00351352 /* WidgetExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtensionExtension.entitlements; sourceTree = "<group>"; };
 		322FE8812B5EA70200351352 /* Nox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nox.entitlements; sourceTree = "<group>"; };
+		326CF1602B6CEDF400520BB1 /* MainFocusWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MainFocusWidgetExtension.entitlements; sourceTree = "<group>"; };
 		3283C0B02B59BA82003AF226 /* PeriodPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodPicker.swift; sourceTree = "<group>"; };
 		328DBB902B57F291007B9070 /* Nox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		328DBB932B57F291007B9070 /* NoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoxApp.swift; sourceTree = "<group>"; };
@@ -227,6 +228,7 @@
 		328DBB872B57F291007B9070 = {
 			isa = PBXGroup;
 			children = (
+				326CF1602B6CEDF400520BB1 /* MainFocusWidgetExtension.entitlements */,
 				322FE8802B5EA6FE00351352 /* WidgetExtensionExtension.entitlements */,
 				32F9E9BA2B58612800B222EF /* Fonts */,
 				328DBB922B57F291007B9070 /* Nox */,
@@ -827,6 +829,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MainFocusWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S3WJ45JT93;
@@ -854,6 +857,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MainFocusWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S3WJ45JT93;

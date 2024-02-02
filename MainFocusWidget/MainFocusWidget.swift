@@ -7,6 +7,7 @@
 
 import WidgetKit
 import SwiftUI
+import AppIntents
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
@@ -42,17 +43,45 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct MainFocusWidgetEntryView : View {
+    @Environment(\.widgetFamily) var widgetStyle
+    @AppStorage("current_target", store: UserDefaults(suiteName: "group.com.theflatladder.Nox")) var currentTarget = ""
     var entry: Provider.Entry
 
     var body: some View {
-        VStack(spacing: 16) {
-            Text("🎯 Sleep")
-                .font(.RubikSemiBold(14))
-            Text(entry.quote)
-                .font(.RubikRegular(14))
-                .multilineTextAlignment(.center)
+        ZStack{
+            VStack{
+                HStack{
+                    Spacer()
+                    Button(intent: RefreshTapIntent(), label: {
+                        Image(systemName: "arrow.clockwise")
+                            .foregroundColor(Color.primary)
+                            .font(.system(size: 12))
+                    })
+                    .buttonStyle(.plain)
+                }
+                Spacer()
+            }
+            VStack(spacing: widgetStyle == .systemSmall ? 8 : 16) {
+                Text("🎯 \(currentTarget)")
+                    .font(.RubikSemiBold(widgetStyle == .systemSmall ? 12 : 14))
+                Text(entry.quote)
+                    .font(.RubikRegular(widgetStyle == .systemSmall ? 12 : 14))
+                    .multilineTextAlignment(.center)
+                    .minimumScaleFactor(0.01)
+            }
+            .padding(widgetStyle == .systemSmall ? 0 : 8)
         }
-        .padding(16)
+    }
+}
+
+struct RefreshTapIntent: AppIntent{
+    
+    static var title: LocalizedStringResource = "RefreshTap"
+    
+    @MainActor
+    func perform() async throws -> some IntentResult {
+        WidgetCenter.shared.reloadTimelines(ofKind: "MainFocusWidget")
+        return .result()
     }
 }
 
@@ -66,11 +95,11 @@ struct MainFocusWidget: Widget {
         }
         .configurationDisplayName("Main focus")
         .description("Keep your purpous in front of you")
-        .supportedFamilies([.systemMedium])
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 
-#Preview(as: .systemMedium) {
+#Preview(as: .systemSmall) {
     MainFocusWidget()
 } timeline: {
     SimpleEntry(date: .now)

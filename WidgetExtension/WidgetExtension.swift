@@ -122,7 +122,7 @@ struct HabitTapIntent: AppIntent{
         habit?.currentCount = max(0, (habit?.currentCount ?? 0) - 1)
         try modelContainer.mainContext.save()
         
-        WidgetCenter.shared.reloadAllTimelines()
+        WidgetCenter.shared.reloadTimelines(ofKind: "WidgetExtension")
         return .result()
     }
 }

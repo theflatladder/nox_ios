@@ -32,7 +32,7 @@ struct HabitView: View {
                 if showReturn {
                     Button(action: {
                         habit.currentCount += 1
-                        WidgetCenter.shared.reloadAllTimelines()
+                        WidgetCenter.shared.reloadTimelines(ofKind: "WidgetExtension")
                     }, label: {
                         Image(systemName: "arrow.counterclockwise")
                             .foregroundColor(.primary)
@@ -45,7 +45,7 @@ struct HabitView: View {
                 if showPlus {
                     Button(action: {
                         habit.currentCount -= 1
-                        WidgetCenter.shared.reloadAllTimelines()
+                        WidgetCenter.shared.reloadTimelines(ofKind: "WidgetExtension")
                     }, label: {
                         Image(systemName: "plus")
                             .foregroundColor(.primary)

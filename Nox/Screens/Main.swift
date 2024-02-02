@@ -12,9 +12,11 @@ import WidgetKit
 struct Main: View {
     
     @Environment(\.modelContext) private var context
+    @AppStorage("current_target", store: UserDefaults(suiteName: "group.com.theflatladder.Nox")) var currentTarget = ""
     
     @Query private var habits: [Habit]
     @State private var addHabitSheet = false
+    @State private var changeTargetSheet = false
     
     var body: some View {
         NavigationView{
@@ -50,19 +52,42 @@ struct Main: View {
                         .background(Color.accentColor)
                         .clipShape(Circle())
                         .padding(16)
-                }.sheet(isPresented: $addHabitSheet) {
+                }
+                
+                //add habit sheet
+                .sheet(isPresented: $addHabitSheet) {
                     AddHabit(save: { newHabit in
                         withAnimation {
                             context.insert(newHabit)
                         }
                         addHabitSheet.toggle()
-                        WidgetCenter.shared.reloadAllTimelines()
+                        WidgetCenter.shared.reloadTimelines(ofKind: "WidgetExtension")
                     })
                     .presentationDetents([.height(500)])
                     .presentationDragIndicator(.visible)
                 }
             }
             .navigationTitle("Nox")
+            .toolbar(content: {
+                Button(action: {
+                    changeTargetSheet.toggle()
+                }, label: {
+                    Image(systemName: "target")
+                        .foregroundColor(Color.primary)
+                })
+                
+                //change target sheet
+                .sheet(isPresented: $changeTargetSheet) {
+                    VStack{
+                        MyTextField(title: "Current target", value: $currentTarget)
+                            .padding(16)
+                        Spacer()
+                    }
+                    .padding(.top, 16)
+                    .presentationDetents([.height(200)])
+                    .presentationDragIndicator(.visible)
+                }
+            })
         }
     }
     
