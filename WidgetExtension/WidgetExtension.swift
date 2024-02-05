@@ -35,8 +35,11 @@ struct Provider: TimelineProvider {
         let descriptor = FetchDescriptor<Habit>()
         let habits = try? modelContainer.mainContext.fetch(descriptor)
         
-        let today = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: Date())!
+        let hoursDiff = Calendar.current.timeZone.secondsFromGMT()/60/60
+        let todayRaw = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: Date())!
+        let today = Calendar.current.date(byAdding: .hour, value: hoursDiff, to: todayRaw)!
         let todayComponents = Calendar.current.dateComponents([.weekday, .day, .month], from: today)
+        
         for habit in habits?.filter({ $0.lastUpdate == nil || $0.lastUpdate! < today }) ?? [] {
             habit.lastUpdate = today
             switch habit.period{
@@ -44,7 +47,7 @@ struct Provider: TimelineProvider {
                 habit.currentCount = habit.maxCount
                 break
             case .Weekly:
-                if todayComponents.weekday == 1{
+                if todayComponents.weekday == 2{
                     habit.currentCount = habit.maxCount
                 }
                 break
