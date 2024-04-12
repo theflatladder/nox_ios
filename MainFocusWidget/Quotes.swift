@@ -64,6 +64,10 @@ class Quotes{
 48. Wave at the children on a school bus.
 49. Remember that 80 per cent of the success in any job is based on your ability to deal with people.
 50. Don’t expect life to be fair.
+51. Show up for yourself.
+52. Performance without motivation.
+53. Don’t practice what you don’t want to become.
+54. It is what it is.
 """
     
     
