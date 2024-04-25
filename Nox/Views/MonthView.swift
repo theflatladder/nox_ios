@@ -12,7 +12,7 @@ struct MonthView: View {
     var month: Date
     var records: [MoodRecord]
     
-    @Environment(\.modelContext) private var context
+    @Binding var months: [Date:[MoodRecord]]
     @State private var moodEditingPresented = false
     @State private var dayInEdit = Date?.none
     
@@ -26,7 +26,7 @@ struct MonthView: View {
                         .foregroundStyle(.primary)
                         .background(
                             Circle()
-                                .foregroundStyle(records.first(where: {$0.date == day})?.color ?? .systemGray5)
+                                .foregroundStyle(records.first(where: {$0.date == day})?.color.opacity(0.3) ?? .systemGray5)
                         )
                         .overlay{
                             Circle()
@@ -50,20 +50,9 @@ struct MonthView: View {
             }
         }
         .sheet(isPresented: $moodEditingPresented, content: {
-            VStack(spacing: 16){
-                Text(dayInEdit?.formatted(date: .abbreviated, time: .omitted) ?? "")
-                HStack(spacing: 16){
-                    ForEach(MoodValue.allCases){
-                        Text($0.title)
-                            .font(.RubikRegular(16))
-                            .padding(8)
-                            .background($0.color.opacity(0.3))
-                            .cornerRadius(8)
-                    }
-                }
-            }
-            .presentationDetents([.height(150)])
-            .presentationDragIndicator(.visible)
+            MoodEditor(dayInEdit: $dayInEdit, moodEditingPresented: $moodEditingPresented, months: $months)
+                .presentationDetents([.height(150)])
+                .presentationDragIndicator(.visible)
         })
     }
     
@@ -87,7 +76,9 @@ struct MonthView: View {
 }
 
 #Preview {
-    MonthView(month: Date(), records: [
+    @State var months = [Date:[MoodRecord]]()
+    return MonthView(month: Date(), records: [
         MoodRecord(date: Date(), value: .Good)
-    ])
+    ], months: $months)
+    .modelContainer(for: MoodRecord.self, inMemory: true)
 }

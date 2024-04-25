@@ -71,15 +71,12 @@ struct Main: View {
             .toolbar(content: {
                 
                 //mood tracking transition
-                Button(action: { }, label: {
-                    Image(systemName: "calendar")
-                        .foregroundColor(Color.primary)
-                })
-                .overlay(
-                    NavigationLink(
-                        destination: { MoodTrackingView() },
-                        label: { EmptyView() }
-                    )
+                NavigationLink(
+                    destination: { MoodTrackingView() },
+                    label: {
+                        Image(systemName: "calendar")
+                            .foregroundColor(Color.primary)
+                    }
                 )
                 
                 //change target sheet

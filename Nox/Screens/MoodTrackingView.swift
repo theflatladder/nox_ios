@@ -27,7 +27,7 @@ struct MoodTrackingView: View {
                                 .padding(.bottom, 8)
                                 .padding(.trailing, 8)
                         }
-                        MonthView(month: month, records: months[month] ?? [])
+                        MonthView(month: month, records: months[month] ?? [], months: $months)
                     }
                     .reversed()
                 }

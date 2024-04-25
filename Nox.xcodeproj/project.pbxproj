@@ -39,6 +39,7 @@
 		324C9A282BDA5E6100A2C599 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9A272BDA5E6100A2C599 /* MonthView.swift */; };
 		324C9A2A2BDA861D00A2C599 /* MoodRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9A292BDA861D00A2C599 /* MoodRecord.swift */; };
 		324C9A2C2BDA88A100A2C599 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9A2B2BDA88A100A2C599 /* Date.swift */; };
+		324C9A322BDAF84F00A2C599 /* MoodEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9A312BDAF84F00A2C599 /* MoodEditor.swift */; };
 		3283C0B12B59BA82003AF226 /* PeriodPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283C0B02B59BA82003AF226 /* PeriodPicker.swift */; };
 		3289DD942B5F0B0A001D856B /* WidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FE8742B5EA4B500351352 /* WidgetExtension.swift */; };
 		328DBB942B57F291007B9070 /* NoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB932B57F291007B9070 /* NoxApp.swift */; };
@@ -144,6 +145,7 @@
 		324C9A272BDA5E6100A2C599 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		324C9A292BDA861D00A2C599 /* MoodRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodRecord.swift; sourceTree = "<group>"; };
 		324C9A2B2BDA88A100A2C599 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		324C9A312BDAF84F00A2C599 /* MoodEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEditor.swift; sourceTree = "<group>"; };
 		326CF1602B6CEDF400520BB1 /* MainFocusWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MainFocusWidgetExtension.entitlements; sourceTree = "<group>"; };
 		3283C0B02B59BA82003AF226 /* PeriodPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodPicker.swift; sourceTree = "<group>"; };
 		328DBB902B57F291007B9070 /* Nox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -323,7 +325,6 @@
 				32FFCD942B594F82006B9A35 /* AddHabit.swift */,
 				322FE84C2B5E5D4E00351352 /* HabitView.swift */,
 				324C9A252BDA558300A2C599 /* MoodTrackingView.swift */,
-				324C9A272BDA5E6100A2C599 /* MonthView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -336,6 +337,8 @@
 				32FFCD962B5951F3006B9A35 /* MyTextField.swift */,
 				32FFCD982B5954C6006B9A35 /* MyStepper.swift */,
 				3283C0B02B59BA82003AF226 /* PeriodPicker.swift */,
+				324C9A272BDA5E6100A2C599 /* MonthView.swift */,
+				324C9A312BDAF84F00A2C599 /* MoodEditor.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				32F9E9B72B57FE8100B222EF /* HabitListView.swift in Sources */,
 				3283C0B12B59BA82003AF226 /* PeriodPicker.swift in Sources */,
 				3289DD942B5F0B0A001D856B /* WidgetExtension.swift in Sources */,
+				324C9A322BDAF84F00A2C599 /* MoodEditor.swift in Sources */,
 				32FFCD952B594F82006B9A35 /* AddHabit.swift in Sources */,
 				324C9A2C2BDA88A100A2C599 /* Date.swift in Sources */,
 				32FFCD992B5954C6006B9A35 /* MyStepper.swift in Sources */,
