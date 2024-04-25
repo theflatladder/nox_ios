@@ -35,6 +35,8 @@
 		322FE8772B5EA4B800351352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322FE8762B5EA4B800351352 /* Assets.xcassets */; };
 		322FE87B2B5EA4B800351352 /* WidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 322FE86B2B5EA4B500351352 /* WidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		322FE8822B5EA8DA00351352 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB972B57F291007B9070 /* Habit.swift */; };
+		324C9A262BDA558300A2C599 /* MoodTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9A252BDA558300A2C599 /* MoodTrackingView.swift */; };
+		324C9A282BDA5E6100A2C599 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C9A272BDA5E6100A2C599 /* MonthView.swift */; };
 		3283C0B12B59BA82003AF226 /* PeriodPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283C0B02B59BA82003AF226 /* PeriodPicker.swift */; };
 		3289DD942B5F0B0A001D856B /* WidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FE8742B5EA4B500351352 /* WidgetExtension.swift */; };
 		328DBB942B57F291007B9070 /* NoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DBB932B57F291007B9070 /* NoxApp.swift */; };
@@ -136,6 +138,8 @@
 		322FE8782B5EA4B800351352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		322FE8802B5EA6FE00351352 /* WidgetExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtensionExtension.entitlements; sourceTree = "<group>"; };
 		322FE8812B5EA70200351352 /* Nox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nox.entitlements; sourceTree = "<group>"; };
+		324C9A252BDA558300A2C599 /* MoodTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTrackingView.swift; sourceTree = "<group>"; };
+		324C9A272BDA5E6100A2C599 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		326CF1602B6CEDF400520BB1 /* MainFocusWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MainFocusWidgetExtension.entitlements; sourceTree = "<group>"; };
 		3283C0B02B59BA82003AF226 /* PeriodPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodPicker.swift; sourceTree = "<group>"; };
 		328DBB902B57F291007B9070 /* Nox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -314,6 +318,8 @@
 				328DBB952B57F291007B9070 /* Main.swift */,
 				32FFCD942B594F82006B9A35 /* AddHabit.swift */,
 				322FE84C2B5E5D4E00351352 /* HabitView.swift */,
+				324C9A252BDA558300A2C599 /* MoodTrackingView.swift */,
+				324C9A272BDA5E6100A2C599 /* MonthView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -542,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				328DBB962B57F291007B9070 /* Main.swift in Sources */,
+				324C9A282BDA5E6100A2C599 /* MonthView.swift in Sources */,
 				32F9E9B72B57FE8100B222EF /* HabitListView.swift in Sources */,
 				3283C0B12B59BA82003AF226 /* PeriodPicker.swift in Sources */,
 				3289DD942B5F0B0A001D856B /* WidgetExtension.swift in Sources */,
@@ -549,6 +556,7 @@
 				32FFCD992B5954C6006B9A35 /* MyStepper.swift in Sources */,
 				32F9E9E52B587B0300B222EF /* Color.swift in Sources */,
 				32F9E9E22B586ECE00B222EF /* Font.swift in Sources */,
+				324C9A262BDA558300A2C599 /* MoodTrackingView.swift in Sources */,
 				328DBB982B57F291007B9070 /* Habit.swift in Sources */,
 				32FFCD972B5951F3006B9A35 /* MyTextField.swift in Sources */,
 				322FE84D2B5E5D4E00351352 /* HabitView.swift in Sources */,

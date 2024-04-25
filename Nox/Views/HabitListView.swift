@@ -10,8 +10,6 @@ import SwiftUI
 struct HabitListView: View {
     
     @Bindable var habit: Habit
-    
-    @State private var plusOpacity = 1.0
     @State private var titleColor = Color.primary
     
     var body: some View {
@@ -29,26 +27,6 @@ struct HabitListView: View {
                 .font(.RubikRegular(18))
                 .padding(4)
                 .foregroundColor(titleColor)
-            
-            /*
-            Button(action: {
-                habit.currentCount -= 1
-            }, label: {
-                Image(systemName: "plus")
-                    .foregroundColor(.primary)
-                    .frame(width: 32, height: 32)
-                    .background(Color.systemGray6)
-                    .cornerRadius(8)
-            })
-            .opacity(plusOpacity)
-            .onChange(of: habit.currentCount, {
-                withAnimation{
-                    plusOpacity = habit.currentCount == 0 ? 0 : 1
-                    titleColor = habit.currentCount == 0 ? .systemGray : .primary
-                }
-            })
-            */
-            
         }
         .padding(.horizontal, 24)
         .padding(.vertical, 16)

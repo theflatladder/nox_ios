@@ -69,14 +69,26 @@ struct Main: View {
             }
             .navigationTitle("Nox")
             .toolbar(content: {
+                
+                //mood tracking transition
+                Button(action: { }, label: {
+                    Image(systemName: "calendar")
+                        .foregroundColor(Color.primary)
+                })
+                .overlay(
+                    NavigationLink(
+                        destination: { MoodTrackingView() },
+                        label: { EmptyView() }
+                    )
+                )
+                
+                //change target sheet
                 Button(action: {
                     changeTargetSheet.toggle()
                 }, label: {
                     Image(systemName: "target")
                         .foregroundColor(Color.primary)
                 })
-                
-                //change target sheet
                 .sheet(isPresented: $changeTargetSheet) {
                     VStack{
                         MyTextField(title: "Current target", value: $currentTarget)
