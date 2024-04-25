@@ -13,6 +13,7 @@ struct NoxApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Habit.self,
+            MoodRecord.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
