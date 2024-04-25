@@ -12,6 +12,10 @@ struct MonthView: View {
     var month: Date
     var records: [MoodRecord]
     
+    @Environment(\.modelContext) private var context
+    @State private var moodEditingPresented = false
+    @State private var dayInEdit = Date?.none
+    
     var body: some View {
         LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 7)) {
             ForEach(getDays(), id: \.self) { day in
@@ -29,11 +33,38 @@ struct MonthView: View {
                                 .stroke(style: StrokeStyle(lineWidth: 1))
                                 .fill(day == .today ? Color.additional : Color.clear)
                         }
+                        .onTapGesture{
+                            dayInEdit = day
+                        }
                 } else {
                     Text("")
                 }
             }
         }
+        .onChange(of: dayInEdit){
+            moodEditingPresented = dayInEdit != nil
+        }
+        .onChange(of: moodEditingPresented){
+            if !moodEditingPresented{
+                dayInEdit = nil
+            }
+        }
+        .sheet(isPresented: $moodEditingPresented, content: {
+            VStack(spacing: 16){
+                Text(dayInEdit?.formatted(date: .abbreviated, time: .omitted) ?? "")
+                HStack(spacing: 16){
+                    ForEach(MoodValue.allCases){
+                        Text($0.title)
+                            .font(.RubikRegular(16))
+                            .padding(8)
+                            .background($0.color.opacity(0.3))
+                            .cornerRadius(8)
+                    }
+                }
+            }
+            .presentationDetents([.height(150)])
+            .presentationDragIndicator(.visible)
+        })
     }
     
     private func getDays() -> [Date?]{

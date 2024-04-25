@@ -31,9 +31,9 @@ enum MoodValue: Int, Codable, CaseIterable, Identifiable{
     
     var id: MoodValue { self }
     
-    case Good = 0
+    case Bad = 0
     case Mid = 1
-    case Bad = 2
+    case Good = 2
     
     var title: String{
         switch self {
